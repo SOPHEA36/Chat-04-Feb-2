@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Veloz PP",
+  "price": "US$32,900",
+  "details": {
+    "model_year": "2025",
+    "mileage": "7,791 Km",
+    "body_colour": "White Pearl",
+    "body_type": "MPV",
+    "engine": "1.5 L",
+    "transmission": "6-speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Corolla Cross PP 2BS",
+  "price": "US$36,300",
+  "details": {
+    "model_year": "2023",
+    "mileage": "39,640 Km",
+    "body_colour": "Brown",
+    "body_type": "SUV",
+    "engine": "1.8 L",
+    "transmission": "7-Speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html"
+}

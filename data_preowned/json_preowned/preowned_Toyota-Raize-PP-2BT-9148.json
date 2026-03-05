@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Raize PP",
+  "price": "US$23,300",
+  "details": {
+    "model_year": "2023",
+    "mileage": "26,142 Km",
+    "body_colour": "White",
+    "body_type": "SUV",
+    "engine": "1.0 L",
+    "transmission": "7-speed CVT",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html"
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "Q036",
+    "q": "Fortuner Legender preowned price year mileage",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+    ]
+  },
+  {
+    "id": "Q037",
+    "q": "Veloz preowned price",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html"
+    ]
+  },
+  {
+    "id": "Q038",
+    "q": "Yaris Cross used price",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html"
+    ]
+  },
+  {
+    "id": "Q039",
+    "q": "pre-owned corolla cross hybrid year mileage",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": []
+  },
+  {
+    "id": "Q040",
+    "q": "show me listings for raize preowned",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html"
+    ]
+  },
+  {
+    "id": "Q041",
+    "q": "preowned plate number fortuner",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+    ]
+  },
+  {
+    "id": "Q042",
+    "q": "certified pre-owned veloz 2024 mileage",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html"
+    ]
+  },
+  {
+    "id": "Q043",
+    "q": "preowned yaris cross",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html"
+    ]
+  },
+  {
+    "id": "Q044",
+    "q": "used fortuner legender",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+    ]
+  },
+  {
+    "id": "Q045",
+    "q": "mileage of preowned veloz",
+    "expected_pipeline": "",
+    "actual_pipeline": "PREOWNED_RAG",
+    "remarks": "empty_answer",
+    "answer": "",
+    "sources": [
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html",
+      "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html"
+    ]
+  }
+]

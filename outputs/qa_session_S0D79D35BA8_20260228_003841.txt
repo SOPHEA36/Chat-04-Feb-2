@@ -1,0 +1,371 @@
+SESSION_ID: S0D79D35BA8
+COMMENT: 
+PROJECT_ROOT: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2
+OFFICIAL_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data/csv/vehicle_master.csv
+PREOWNED_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data_preowned/csv_preowned/preowned_master.csv
+
+[CORRECT] Q001 EXPECTED= ACTUAL=SYSTEM
+Q: hello
+A: Hello! Welcome to Toyota Cambodia. I'm here to help you.
+
+You can ask me about:
+• Price & specs of any Toyota model
+• Features (CarPlay, 360 camera, airbags, seats)
+• Compare two models
+• Recommendations based on your budget
+• Pre-owned / used listings
+
+What would you like to know?
+--------------------------------------------------------------------------------
+[CORRECT] Q002 EXPECTED= ACTUAL=SYSTEM
+Q: thanks
+A: You're welcome. What would you like to know about Toyota Cambodia?
+--------------------------------------------------------------------------------
+[CORRECT] Q003 EXPECTED= ACTUAL=SYSTEM
+Q: /reset
+A: Reset done.
+--------------------------------------------------------------------------------
+[CORRECT] Q004 EXPECTED= ACTUAL=CSV_METHOD
+Q: price of yaris cross gasoline
+A: The **YARIS CROSS GASOLINE** is priced at **$37,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q005 EXPECTED= ACTUAL=CSV_METHOD
+Q: how much is fortuner legender
+A: The **Fortuner Legender** is priced at **$65,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q006 EXPECTED= ACTUAL=CSV_METHOD
+Q: starting price of raize
+A: The **Raize** is priced at **$26,800** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q007 EXPECTED= ACTUAL=CSV_METHOD
+Q: specs of fortuner legender
+A: Great question! Here's a quick spec overview for the **Fortuner Legender**:
+
+**Price:** $65,500
+**Seats:** 7.0
+**Fuel:** Diesel
+**Body type:** SUV
+**Transmission:** 6-speed automatic
+**Engine:** 2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q008 EXPECTED= ACTUAL=CSV_METHOD
+Q: show specs for veloz
+A: Great question! Here's a quick spec overview for the **Veloz**:
+
+**Price:** $35,900
+**Seats:** 7.0
+**Fuel:** Gasoline
+**Body type:** MVP
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHC Chain Drive with Dual VVT-i
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q009 EXPECTED= ACTUAL=CSV_METHOD
+Q: specs?
+A: Great question! Here's a quick spec overview for the **Veloz**:
+
+**Price:** $35,900
+**Seats:** 7.0
+**Fuel:** Gasoline
+**Body type:** MVP
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHC Chain Drive with Dual VVT-i
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q010 EXPECTED= ACTUAL=CSV_METHOD
+Q: summary of raize
+A: Sure! Here's a quick overview of the **Raize**:
+
+The Raize is a Gasoline-powered SUV priced at **$26,800**. It seats up to **5.0 passengers** and comes with a **7-speed CVT** transmission.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q011 EXPECTED= ACTUAL=CSV_METHOD
+Q: give me summary for corolla cross hev
+A: Sure! Here's a quick overview of the **Corolla Cross HEV**:
+
+The Corolla Cross HEV is a Hybrid-powered SUV priced at **$49,900**. It seats up to **5.0 passengers** and comes with a **7-speed CVT** transmission.
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+--------------------------------------------------------------------------------
+[CORRECT] Q012 EXPECTED= ACTUAL=CSV_METHOD
+Q: summary?
+A: Sure! Here's a quick overview of the **Corolla Cross HEV**:
+
+The Corolla Cross HEV is a Hybrid-powered SUV priced at **$49,900**. It seats up to **5.0 passengers** and comes with a **7-speed CVT** transmission.
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+--------------------------------------------------------------------------------
+[CORRECT] Q013 EXPECTED= ACTUAL=CSV_METHOD
+Q: does corolla cross have 360 camera
+A: Yes. The **COROLLA CROSS GASOLINE** includes **360° Panoramic View Monitor**.
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q014 EXPECTED= ACTUAL=CSV_METHOD
+Q: does yaris cross have apple carplay
+A: Thanks. I don’t have that feature captured in the current dataset yet.
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+[CORRECT] Q015 EXPECTED= ACTUAL=CSV_METHOD
+Q: what is the transmission of veloz
+A: The **Veloz** has **Transmission**: **CVT**.
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q016 EXPECTED= ACTUAL=CSV_METHOD
+Q: what is the fuel type of land cruiser 250 diesel
+A: The **Land Cruiser 250 Diesel** has **Fuel type**: **diesel**.
+SOURCES: https://www.toyota.com.kh/en/models/land-cruiser-250/land-cruiser-250-diesel.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q017 EXPECTED= ACTUAL=CSV_METHOD
+Q: what is the seat number of hiace 16 seater
+A: The **Hiace 16-seater** has **Seats**: **16.0**.
+SOURCES: https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q018 EXPECTED= ACTUAL=CSV_METHOD
+Q: price of it
+A: The **Hiace 16-seater** is priced at **$49,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q019 EXPECTED= ACTUAL=CSV_METHOD
+Q: what about specs
+A: Great question! Here's a quick spec overview for the **Hiace 16-seater**:
+
+**Price:** $49,900
+**Seats:** 16.0
+**Fuel:** Diesel
+**Body type:** Bus
+**Transmission:** 5 M/T
+**Engine:** 2.5 L, 4-cylinder diesel, in-line
+SOURCES: https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q020 EXPECTED= ACTUAL=CSV_METHOD
+Q: does it have 360 camera
+A: No. The **Hiace 16-seater** does not include **360° Panoramic View Monitor**.
+SOURCES: https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q021 EXPECTED= ACTUAL=CSV_METHOD
+Q: compare veloz vs vios
+A: Here’s a quick comparison (official dataset): Veloz vs Vios
+- Price: $35,900 vs $33,900
+- Seats: 7.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: MVP vs Sedan
+- Transmission: CVT vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q022 EXPECTED= ACTUAL=CSV_METHOD
+Q: vios vs raize
+A: Here’s a quick comparison (official dataset): Raize vs Vios
+- Price: $26,800 vs $33,900
+- Seats: 5.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: SUV vs Sedan
+- Transmission: N/A vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q023 EXPECTED= ACTUAL=SYSTEM
+Q: compare
+A: Which two Toyota models do you want to compare? Example: compare Veloz vs Vios
+--------------------------------------------------------------------------------
+[CORRECT] Q024 EXPECTED= ACTUAL=CSV_METHOD
+Q: recommend suv
+A: Sure. Tell me your budget (USD). Example: budget 40000
+--------------------------------------------------------------------------------
+[CORRECT] Q025 EXPECTED= ACTUAL=CSV_METHOD
+Q: i want to buy a new car
+A: Sure. Tell me your budget (USD). Example: budget 40000
+--------------------------------------------------------------------------------
+[CORRECT] Q026 EXPECTED= ACTUAL=CSV_METHOD
+Q: recommend SUV under $45000 gasoline
+A: Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+2. YARIS CROSS GASOLINE
+   $37,500 | N/A seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q027 EXPECTED= ACTUAL=CSV_METHOD
+Q: budget 40000 fuel gasoline body suv
+A: Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+2. YARIS CROSS GASOLINE
+   $37,500 | N/A seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q028 EXPECTED= ACTUAL=CSV_METHOD
+Q: budget 35000 body sedan fuel gasoline
+A: Here are some Toyota models that match your preferences:
+
+1. Vios
+   $33,900 | 5.0 seats | Gasoline | Sedan
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q029 EXPECTED= ACTUAL=CSV_METHOD
+Q: budget 60000 body suv fuel diesel min seats 7
+A: I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+[CORRECT] Q030 EXPECTED= ACTUAL=CSV_METHOD
+Q: recommend pickup
+A: Sure. Tell me your budget (USD). Example: budget 40000
+--------------------------------------------------------------------------------
+[CORRECT] Q031 EXPECTED= ACTUAL=CSV_METHOD
+Q: budget 50000
+A: What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+[CORRECT] Q032 EXPECTED= ACTUAL=CSV_METHOD
+Q: diesel
+A: Here are some Toyota models that match your preferences:
+
+1. Hilux Revo V-Edition
+   $40,900 | 5.0 seats | Diesel | Pickup
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-v-edition.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q033 EXPECTED= ACTUAL=SYSTEM
+Q: pickup
+A: Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).
+--------------------------------------------------------------------------------
+[CORRECT] Q034 EXPECTED= ACTUAL=CSV_METHOD
+Q: recommend suv under 45000 gasoline
+A: Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+2. YARIS CROSS GASOLINE
+   $37,500 | N/A seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q035 EXPECTED= ACTUAL=SYSTEM
+Q: both
+A: Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).
+--------------------------------------------------------------------------------
+[INCORRECT] Q036 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: Fortuner Legender preowned price year mileage
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q037 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: Veloz preowned price
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q038 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: Yaris Cross used price
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q039 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: pre-owned corolla cross hybrid year mileage
+A: (empty)
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q040 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: show me listings for raize preowned
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q041 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: preowned plate number fortuner
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q042 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: certified pre-owned veloz 2024 mileage
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q043 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: preowned yaris cross
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q044 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: used fortuner legender
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[INCORRECT] Q045 EXPECTED= ACTUAL=PREOWNED_RAG
+Q: mileage of preowned veloz
+A: (empty)
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html
+REMARKS: empty_answer
+--------------------------------------------------------------------------------
+[CORRECT] Q046 EXPECTED= ACTUAL=CSV_METHOD
+Q: does raize have sunroof panoramic and ventilated seat
+A: The **Raize** has **Seats**: **5.0**.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q047 EXPECTED= ACTUAL=SYSTEM
+Q: what is the 0-100 acceleration of vios
+A: That's a great question, but unfortunately I don't have that information in our dataset. Feel free to ask about price, specs, features, comparisons, recommendations, or pre-owned listings.
+--------------------------------------------------------------------------------
+[CORRECT] Q048 EXPECTED= ACTUAL=SYSTEM
+Q: tell me the best car in cambodia overall
+A: That's a great question, but unfortunately I don't have that information in our dataset. Feel free to ask about price, specs, features, comparisons, recommendations, or pre-owned listings.
+--------------------------------------------------------------------------------
+[CORRECT] Q049 EXPECTED= ACTUAL=CSV_METHOD
+Q: 1) price of yaris cross
+A: The **Yaris Cross HEV** is priced at **$43,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+[CORRECT] Q050 EXPECTED= ACTUAL=CSV_METHOD
+Q: "specs of    fortuner    legender  "
+A: Great question! Here's a quick spec overview for the **Fortuner Legender**:
+
+**Price:** $65,500
+**Seats:** 7.0
+**Fuel:** Diesel
+**Body type:** SUV
+**Transmission:** 6-speed automatic
+**Engine:** 2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q051 EXPECTED= ACTUAL=CSV_METHOD
+Q: (summary of raize)
+A: Sure! Here's a quick overview of the **Raize**:
+
+The Raize is a Gasoline-powered SUV priced at **$26,800**. It seats up to **5.0 passengers** and comes with a **7-speed CVT** transmission.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+[CORRECT] Q052 EXPECTED= ACTUAL=CSV_METHOD
+Q: compare    veloz   versus   vios
+A: Here’s a quick comparison (official dataset): Veloz vs Vios
+- Price: $35,900 vs $33,900
+- Seats: 7.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: MVP vs Sedan
+- Transmission: CVT vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+
+SUMMARY
+TOTAL: 52
+PASSED: 42
+FAILED: 10
+PASS_RATE: 80.77%
+
+NEXT
+- Failures JSON (send to me): qa_failures_S0D79D35BA8_20260228_003841.json
+- TXT report: qa_session_S0D79D35BA8_20260228_003841.txt
+- CSV report: qa_session_S0D79D35BA8_20260228_003841.csv

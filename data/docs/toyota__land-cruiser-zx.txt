@@ -1,0 +1,62 @@
+Model: Toyota Land Cruiser ZX
+Price (USD): 188500
+Body type: SUV
+Seating capacity: 7
+Fuel: diesel
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer, siren, intrusion & tilt sensor
+- Apple Carplay And Android Auto: Included
+- Audio System: 12.3-inch touchscreen display, bluetooth, 10 JBL speakers with subwoofer
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: USB (x4), wireless (x1)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Daytime Running Lights: LED
+- Displacement: 3,346 cc
+- Drive Type: Four-wheel drive (4WD)
+- Dynamic Radar Cruise Control Drcc: Included
+- Emergency Stop Signal: Included
+- Engine Type: 3.3 L, V6 twin-turbo diesel, 24-valve DOHC
+- Fog Lamps: LED
+- Front: 1,667 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x1)
+- Fuel Tank Capacity: 80 L
+- Gross Vehicle Weight: 3,230 kg
+- Ground Clearance: 235 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 2,615 kg
+- Length   Width   Height: 4,995 / 1,990 / 1,945 mm
+- Leveling: Automatic
+- Maximum Output: 302 HP (225 kW) @ 4,000 RPM
+- Maximum Torque: 700 Nm @ 1,600 – 2,600 RPM
+- Minimum Turning Radius Tire: 5.9 m
+- Multiinformation Display Mid: TFT
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x4), rear (x4)
+- Rear: 1,668 mm
+- Reverse Camera: Included
+- Seating Capacity: 7
+- Second Row: 3-point ELR (x3) with outer adjuster and outer pretensioner (x3)
+- Side View Mirrors: Power adjustable, retractable, heating, reverse, camera, light, Blind Spot Monitor
+- Smart Entry: Not available
+- Spare Tire  Rim: Ground tire, alloy wheel
+- Srs Airbags: 10 (1 driver, 1 driver's knee, 2 cockpit sides, 1 front passenger, 2 side, 3 curtain shield)
+- Steering: Hydraulic power steering
+- Steering Column: Electric tilt & telescopic
+- Steering Wheel Controls: Audio, telephone, voice recognition, MID, Adaptive Cruise Control, Lane Departure Alert
+- Third Row: 3-point ELR (x2) with outer adjuster and outer pretensioner (x2)
+- Tire  Disc Wheels: 265/55 R20 alloy wheel
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: 10-speed automatic
+- Type: Adaptive High Beam System (AHS), sequential turn signal
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,850 mm
+- Windshield Wipers: Intermittent, rain-sensing
+- Wireless Charging: Included
+
+Source: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications

@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Corolla-Cross-Hybrid-PP-2CI-0199
+Brand: Toyota
+Model: Toyota Corolla Cross Hybrid PP 2CI
+Year: 2024
+Price (USD): 44900.0
+Mileage (km): 2560
+Body Type: SUV
+Body Color: White Pearl
+Engine: 1.8 L
+Fuel: gasoline
+Transmission: 7-speed CVT
+Plate No: PP-2CI-0199
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html

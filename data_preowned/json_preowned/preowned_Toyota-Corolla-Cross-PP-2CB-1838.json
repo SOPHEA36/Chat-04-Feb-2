@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Corolla Cross PP 2CB",
+  "price": "US$42,900",
+  "details": {
+    "model_year": "2024",
+    "mileage": "27,655 Km",
+    "body_colour": "Black",
+    "body_type": "SUV",
+    "engine": "1.8 L",
+    "transmission": "7-Speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html"
+}

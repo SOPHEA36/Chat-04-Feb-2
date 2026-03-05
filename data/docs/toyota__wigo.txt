@@ -1,0 +1,62 @@
+Model: Toyota Wigo
+Price (USD): 19900
+Body type: Hatchback
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Alarm & immobilizer
+- Apple Carplay Or Android Auto: Included
+- Audio System: 8-inch display audio
+- Blind Spot Monitor Bsm: Included
+- Body Type: Hatchback
+- Charging Ports: DI 1 port
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Not available
+- Daytime Running Lights: Not available
+- Displacement: 998 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.0 L, 3-cylinder gasoline, in-line, 12-valve DOHC (VVT-i)
+- Front: 1,465 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR)
+- Fuel Tank Capacity: 36 L
+- Gross Vehicle Weight: 1,400 kg
+- Ground Clearance: 165 mm
+- Headup Display Hud: Not available
+- High Mount Stop Lamp: LED
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 885 kg
+- Length   Width   Height: 3,760 / 1,665 / 1,515 mm
+- Levelling: Not available
+- Maximum Output: 66 HP (49 kW) @ 6,000 RPM
+- Maximum Torque: 89 Nm @ 4,400 RPM
+- Minimum Turning Radius Tire: 4.5 m
+- Multiinformation Display Mid: Analog
+- Panoramic View Monitor Pvm: Not available
+- Parking Sensors: Rear (x2)
+- Rear: 1,460 mm
+- Rear Window Defogger: Included
+- Reverse Camera: Included
+- Seating Capacity: 5
+- Second Row: 3-point Emergency Locking Retractor (ELR)
+- Side View Mirrors: Electric adjustable, electric retractable
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tyre (steel)
+- Srs Airbags: 6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Tilt, without lock
+- Steering Type: Electronic power steering
+- Steering Wheel Controls: Audio, telephone
+- Third Row: Not available
+- Tire  Disc Wheels: 175/65R14 alloy
+- Tire Pressure Warning System Tpws: Not available
+- Transmission: CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,525 mm
+- Windshield Wipers: Intermittent, reverse linked
+- Wireless Charging: Not available
+
+Source: https://www.toyota.com.kh/en/models/wigo/wigo.html#specifications

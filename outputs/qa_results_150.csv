@@ -1,0 +1,611 @@
+id,section,turn_group,user_text,expected_pipeline,actual_pipeline,pipeline_pass,technique,remark,answer_text,sources,sources_count,rewrite_used,answer_len,agent_score,agent_notes,has_refusal,has_question_back,has_numbers,has_sources_line
+1,A) System & small talk,sys1,hello,SYSTEM,SYSTEM,True,system,small talk response,"Hi! Tell me what you want to know (price, specs, features, compare, or recommendation).
+[PIPELINE=SYSTEM]",,0,False,105,10,,False,False,False,False
+2,A) System & small talk,sys1,thanks,SYSTEM,SYSTEM,True,system,small talk response,"Hi! Tell me what you want to know (price, specs, features, compare, or recommendation).
+[PIPELINE=SYSTEM]",,0,False,105,10,,False,False,False,False
+3,A) System & small talk,sys1,/reset,SYSTEM,SYSTEM,True,system,reset state,"Reset done.
+[PIPELINE=SYSTEM]",,0,False,29,10,,False,False,False,False
+4,B) CSV structured,csv1,price of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV + url,"Sure — here are the official prices from our dataset:
+
+Yaris Cross HEV — Price (USD): $43,500
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,211,10,,False,False,True,True
+5,B) CSV structured,csv1,specs of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-specs,specs list from CSV,"Fortuner Legender — key specifications (official data):
+- Price (USD): $65,500
+- Seats: 7
+- Fuel: diesel
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,235,10,,False,False,True,True
+6,B) CSV structured,csv1,summary of Raize,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV function,"Thanks. I don’t have a summary captured for Raize in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,176,8,refusal without asking clarifying info/next step,True,False,False,True
+7,B) CSV structured,csv1,what is the transmission of Veloz,CSV_METHOD,CSV_METHOD,True,structured-feature,must stay CSV,"Thanks. I don’t have 'transmission' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,False,True
+8,B) CSV structured,csv1,fuel tank of Vios,CSV_METHOD,CSV_METHOD,True,structured-feature,must stay CSV,"Thanks. I don’t have 'fuel_tank' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,232,8,refusal without asking clarifying info/next step,True,False,False,True
+9,B) CSV structured,csv1,how many airbags does Raize have,CSV_METHOD,CSV_METHOD,True,structured-feature,must stay CSV,"Thanks. I don’t have 'airbags' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,233,8,refusal without asking clarifying info/next step,True,False,False,True
+10,C) Compare,cmp1,compare Veloz vs Vios,CSV_METHOD,CSV_METHOD,True,compare,side-by-side price/seats/fuel/body,"Here’s a quick comparison (official dataset): Veloz vs Vios
+- Price: $35,900 vs $33,900
+- Seats: 7 vs 5
+- Fuel: gasoline vs gasoline
+- Body type: MVP vs Sedan
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications | https://www.toyota.com.kh/en/models/vios/vios.html#specifications,2,False,344,10,,False,False,True,True
+11,C) Compare,cmp1,compare,SYSTEM,SYSTEM,True,compare,ask for two models,"Which two Toyota models do you want to compare? Example: compare Veloz vs Vios
+[PIPELINE=SYSTEM]",,0,False,96,10,,False,True,False,False
+12,D) Reco slotfill,reco1,recommend suv,SYSTEM,SYSTEM,True,filter-slotfill,ask missing slots,"Sure — I can help. To recommend from our dataset, please tell me:
+- budget (USD)
+- fuel (Gasoline / Diesel / Hybrid / EV)
+- body type (SUV / Sedan / Pickup / MPV / Bus)
+(Seats is optional)
+[PIPELINE=SYSTEM]",,0,False,206,10,,False,True,False,False
+13,D) Reco slotfill,reco1,budget 45000,SYSTEM,SYSTEM,True,filter-slotfill,still missing fuel,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,10,,False,False,False,False
+14,D) Reco slotfill,reco1,gasoline,SYSTEM,SYSTEM,True,filter-slotfill,still missing body type,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,10,,False,False,False,False
+15,D) Reco slotfill,reco1,SUV,CSV_METHOD,SYSTEM,False,filter-slotfill,return filtered matches,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,10,,False,False,False,False
+16,E) Follow-up context,ctx1,price of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,context-set,set last_model,"Sure — here are the official prices from our dataset:
+
+Yaris Cross HEV — Price (USD): $43,500
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,211,10,,False,False,True,True
+17,E) Follow-up context,ctx1,price of it,CSV_METHOD,CSV_METHOD,True,follow-up,use last_model; no ask model,"Sure — here are the official prices from our dataset:
+
+Yaris Cross HEV — Price (USD): $43,500
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,211,10,,False,False,True,True
+18,E) Follow-up context,ctx1,what about specs,CSV_METHOD,CSV_METHOD,True,follow-up,use last_model specs,"Yaris Cross HEV — key specifications (official data):
+- Price (USD): $43,500
+- Fuel: hybrid
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,226,10,,False,False,True,True
+19,E) Follow-up context,ctx1,does it have 360 camera,CSV_METHOD,CSV_METHOD,True,follow-up,use last_model feature,"Thanks. I don’t have 'camera_360' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,265,8,refusal without asking clarifying info/next step,True,False,True,True
+20,F) Preowned,pre1,Fortuner Legender preowned price year mileage,PREOWNED_RAG,PREOWNED_RAG,True,semantic-preowned,listings bullets + range + sources,"Pre-owned dataset is not loaded. Please check preowned_master.csv path.
+[PIPELINE=PREOWNED_RAG]",,0,True,95,10,,False,False,False,False
+21,F) Preowned,pre1,Veloz pre-owned price,PREOWNED_RAG,PREOWNED_RAG,True,semantic-preowned,listings + sources,"Pre-owned dataset is not loaded. Please check preowned_master.csv path.
+[PIPELINE=PREOWNED_RAG]",,0,True,95,10,,False,False,False,False
+22,F) Preowned,pre1,show me listings for Raize preowned,PREOWNED_RAG,PREOWNED_RAG,True,semantic-preowned,table-like bullets,"Pre-owned dataset is not loaded. Please check preowned_master.csv path.
+[PIPELINE=PREOWNED_RAG]",,0,True,95,10,,False,False,False,False
+23,F) Preowned,pre1,mileage of preowned Veloz,PREOWNED_RAG,PREOWNED_RAG,True,semantic-preowned,compute mileage range,"Pre-owned dataset is not loaded. Please check preowned_master.csv path.
+[PIPELINE=PREOWNED_RAG]",,0,True,95,10,,False,False,False,False
+24,G) Guardrail,guard1,what is the 0-100 acceleration of Vios,SYSTEM,CSV_METHOD,False,guardrail,performance metric not in dataset -> refuse,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+25,G) Guardrail,guard1,tell me the best car in cambodia overall,SYSTEM,SYSTEM,True,guardrail,ask criteria; no ranking,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,10,,False,False,False,False
+26,H) Official RAG,rag1,Explain Toyota Safety Sense on Corolla Cross in simple words,RAG,SYSTEM,False,semantic-official,retrieve explanation text + sources,"Which model are you asking about?
+[PIPELINE=SYSTEM]",,0,False,51,7,no sources for an explanatory query,False,True,False,False
+27,H) Official RAG,rag1,What colors are available for Raize?,RAG,CSV_METHOD,False,semantic-official,colors from KB + sources,"Thanks. I don’t have 'transmission' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,238,8,refusal without asking clarifying info/next step,True,False,False,True
+28,K) Bulk realistic,bulk2,how much is Raize,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Raize — Price (USD): $26,800
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,182,10,,False,False,True,True
+29,K) Bulk realistic,bulk2,what is the transmission of Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+30,K) Bulk realistic,bulk2,how many seats does COROLLA CROSS GASOLINE have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,291,8,refusal without asking clarifying info/next step,True,False,False,True
+31,K) Bulk realistic,bulk3,What are the available colors for Fortuner Legender?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+32,K) Bulk realistic,bulk3,summary of Vios,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Vios in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,173,8,refusal without asking clarifying info/next step,True,False,False,True
+33,K) Bulk realistic,bulk3,ground clearance of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+34,K) Bulk realistic,bulk3,does Yaris Cross HEV have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,268,8,refusal without asking clarifying info/next step,True,False,False,True
+35,K) Bulk realistic,bulk3,specs of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Corolla Cross HEV — key specifications (official data):
+- Price (USD): $49,900
+- Seats: 5
+- Fuel: hybrid
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,237,10,,False,False,True,True
+36,K) Bulk realistic,bulk3,What warranty does Veloz have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,False,True
+37,K) Bulk realistic,bulk3,how many airbags does Raize have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,233,8,refusal without asking clarifying info/next step,True,False,False,True
+38,K) Bulk realistic,bulk3,how much is Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Hilux Revo Rally — Price (USD): $50,600
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,209,10,,False,False,True,True
+39,K) Bulk realistic,bulk3,what is the transmission of COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,291,8,refusal without asking clarifying info/next step,True,False,False,True
+40,K) Bulk realistic,bulk3,how many seats does Fortuner Legender have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+41,K) Bulk realistic,bulk4,Explain the main safety features of Vios in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+42,K) Bulk realistic,bulk4,summary of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Hiace 12-seater in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,196,8,refusal without asking clarifying info/next step,True,False,True,True
+43,K) Bulk realistic,bulk4,ground clearance of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,271,8,refusal without asking clarifying info/next step,True,False,False,True
+44,K) Bulk realistic,bulk4,does Corolla Cross HEV have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,268,8,refusal without asking clarifying info/next step,True,False,False,True
+45,K) Bulk realistic,bulk4,specs of Veloz,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Veloz — key specifications (official data):
+- Price (USD): $35,900
+- Seats: 7
+- Fuel: gasoline
+- Body type: MVP
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,230,10,,False,False,True,True
+46,K) Bulk realistic,bulk4,Explain the difference between trims/variants for Raize,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+47,K) Bulk realistic,bulk4,how many airbags does Hilux Revo Rally have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,260,8,refusal without asking clarifying info/next step,True,False,False,True
+48,K) Bulk realistic,bulk4,how much is COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+COROLLA CROSS GASOLINE — Price (USD): $47,900
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,235,10,,False,False,True,True
+49,K) Bulk realistic,bulk4,what is the transmission of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+50,K) Bulk realistic,bulk4,how many seats does Vios have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+51,K) Bulk realistic,bulk5,What are the available colors for Hiace 12-seater?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+52,K) Bulk realistic,bulk5,summary of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Yaris Cross HEV in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,205,8,refusal without asking clarifying info/next step,True,False,False,True
+53,K) Bulk realistic,bulk5,ground clearance of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,271,8,refusal without asking clarifying info/next step,True,False,False,True
+54,K) Bulk realistic,bulk5,does Veloz have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,259,8,refusal without asking clarifying info/next step,True,False,False,True
+55,K) Bulk realistic,bulk5,specs of Raize,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Raize — key specifications (official data):
+- Price (USD): $26,800
+- Seats: 5
+- Fuel: gasoline
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,210,10,,False,False,True,True
+56,K) Bulk realistic,bulk5,What warranty does Hilux Revo Rally have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+57,K) Bulk realistic,bulk5,how many airbags does COROLLA CROSS GASOLINE have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,286,8,refusal without asking clarifying info/next step,True,False,False,True
+58,K) Bulk realistic,bulk5,how much is Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Fortuner Legender — Price (USD): $65,500
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,209,10,,False,False,True,True
+59,K) Bulk realistic,bulk5,what is the transmission of Vios,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+60,K) Bulk realistic,bulk5,how many seats does Hiace 12-seater have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+61,K) Bulk realistic,bulk6,Explain the main safety features of Yaris Cross HEV in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+62,K) Bulk realistic,bulk6,summary of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Corolla Cross HEV in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,205,8,refusal without asking clarifying info/next step,True,False,False,True
+63,K) Bulk realistic,bulk6,ground clearance of Veloz,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,262,8,refusal without asking clarifying info/next step,True,False,False,True
+64,K) Bulk realistic,bulk6,does Raize have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,239,8,refusal without asking clarifying info/next step,True,False,False,True
+65,K) Bulk realistic,bulk6,specs of Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Hilux Revo Rally — key specifications (official data):
+- Price (USD): $50,600
+- Seats: 5
+- Fuel: diesel
+- Body type: Pickup
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,238,10,,False,False,True,True
+66,K) Bulk realistic,bulk6,Explain the difference between trims/variants for COROLLA CROSS GASOLINE,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+67,K) Bulk realistic,bulk6,how many airbags does Fortuner Legender have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,260,8,refusal without asking clarifying info/next step,True,False,False,True
+68,K) Bulk realistic,bulk6,how much is Vios,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Vios — Price (USD): $33,900
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,179,10,,False,False,True,True
+69,K) Bulk realistic,bulk6,what is the transmission of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+70,K) Bulk realistic,bulk6,how many seats does Yaris Cross HEV have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+71,K) Bulk realistic,bulk7,What are the available colors for Corolla Cross HEV?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+72,K) Bulk realistic,bulk7,summary of Veloz,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Veloz in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,196,8,refusal without asking clarifying info/next step,True,False,False,True
+73,K) Bulk realistic,bulk7,ground clearance of Raize,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,242,8,refusal without asking clarifying info/next step,True,False,False,True
+74,K) Bulk realistic,bulk7,does Hilux Revo Rally have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,266,8,refusal without asking clarifying info/next step,True,False,False,True
+75,K) Bulk realistic,bulk7,specs of COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"COROLLA CROSS GASOLINE — key specifications (official data):
+- Price (USD): $47,900
+- Seats: 5
+- Fuel: gasoline
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,263,10,,False,False,True,True
+76,K) Bulk realistic,bulk7,What warranty does Fortuner Legender have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+77,K) Bulk realistic,bulk7,how many airbags does Vios have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,230,8,refusal without asking clarifying info/next step,True,False,False,True
+78,K) Bulk realistic,bulk7,how much is Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Hiace 12-seater — Price (USD): $39,900
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,202,10,,False,False,True,True
+79,K) Bulk realistic,bulk7,what is the transmission of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+80,K) Bulk realistic,bulk7,how many seats does Corolla Cross HEV have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+81,K) Bulk realistic,bulk8,Explain the main safety features of Veloz in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,False,True
+82,K) Bulk realistic,bulk8,summary of Raize,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Raize in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,176,8,refusal without asking clarifying info/next step,True,False,False,True
+83,K) Bulk realistic,bulk8,ground clearance of Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,269,8,refusal without asking clarifying info/next step,True,False,False,True
+84,K) Bulk realistic,bulk8,does COROLLA CROSS GASOLINE have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,292,8,refusal without asking clarifying info/next step,True,False,False,True
+85,K) Bulk realistic,bulk8,specs of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Fortuner Legender — key specifications (official data):
+- Price (USD): $65,500
+- Seats: 7
+- Fuel: diesel
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,235,10,,False,False,True,True
+86,K) Bulk realistic,bulk8,Explain the difference between trims/variants for Vios,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+87,K) Bulk realistic,bulk8,how many airbags does Hiace 12-seater have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+88,K) Bulk realistic,bulk8,how much is Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Yaris Cross HEV — Price (USD): $43,500
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,211,10,,False,False,True,True
+89,K) Bulk realistic,bulk8,what is the transmission of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+90,K) Bulk realistic,bulk8,how many seats does Veloz have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,False,True
+91,K) Bulk realistic,bulk9,What are the available colors for Raize?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,238,8,refusal without asking clarifying info/next step,True,False,False,True
+92,K) Bulk realistic,bulk9,summary of Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Hilux Revo Rally in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,203,8,refusal without asking clarifying info/next step,True,False,False,True
+93,K) Bulk realistic,bulk9,ground clearance of COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,295,8,refusal without asking clarifying info/next step,True,False,False,True
+94,K) Bulk realistic,bulk9,does Fortuner Legender have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,266,8,refusal without asking clarifying info/next step,True,False,False,True
+95,K) Bulk realistic,bulk9,specs of Vios,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Vios — key specifications (official data):
+- Price (USD): $33,900
+- Seats: 5
+- Fuel: gasoline
+- Body type: Sedan
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,209,10,,False,False,True,True
+96,K) Bulk realistic,bulk9,What warranty does Hiace 12-seater have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+97,K) Bulk realistic,bulk9,how many airbags does Yaris Cross HEV have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,262,8,refusal without asking clarifying info/next step,True,False,False,True
+98,K) Bulk realistic,bulk9,how much is Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Corolla Cross HEV — Price (USD): $49,900
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,211,10,,False,False,True,True
+99,K) Bulk realistic,bulk9,what is the transmission of Veloz,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,False,True
+100,K) Bulk realistic,bulk9,how many seats does Raize have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,238,8,refusal without asking clarifying info/next step,True,False,False,True
+101,K) Bulk realistic,bulk10,Explain the main safety features of Hilux Revo Rally in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+102,K) Bulk realistic,bulk10,summary of COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for COROLLA CROSS GASOLINE in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,229,8,refusal without asking clarifying info/next step,True,False,False,True
+103,K) Bulk realistic,bulk10,ground clearance of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,269,8,refusal without asking clarifying info/next step,True,False,False,True
+104,K) Bulk realistic,bulk10,does Vios have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,236,8,refusal without asking clarifying info/next step,True,False,False,True
+105,K) Bulk realistic,bulk10,specs of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Hiace 12-seater — key specifications (official data):
+- Price (USD): $39,900
+- Seats: 12
+- Fuel: diesel
+- Body type: BUS
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,229,10,,False,False,True,True
+106,K) Bulk realistic,bulk10,Explain the difference between trims/variants for Yaris Cross HEV,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+107,K) Bulk realistic,bulk10,how many airbags does Corolla Cross HEV have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,262,8,refusal without asking clarifying info/next step,True,False,False,True
+108,K) Bulk realistic,bulk10,how much is Veloz,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Veloz — Price (USD): $35,900
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,202,10,,False,False,True,True
+109,K) Bulk realistic,bulk10,what is the transmission of Raize,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,238,8,refusal without asking clarifying info/next step,True,False,False,True
+110,K) Bulk realistic,bulk10,how many seats does Hilux Revo Rally have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+111,K) Bulk realistic,bulk11,What are the available colors for COROLLA CROSS GASOLINE?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,291,8,refusal without asking clarifying info/next step,True,False,False,True
+112,K) Bulk realistic,bulk11,summary of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Fortuner Legender in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,203,8,refusal without asking clarifying info/next step,True,False,False,True
+113,K) Bulk realistic,bulk11,ground clearance of Vios,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,239,8,refusal without asking clarifying info/next step,True,False,False,True
+114,K) Bulk realistic,bulk11,does Hiace 12-seater have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+115,K) Bulk realistic,bulk11,specs of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Yaris Cross HEV — key specifications (official data):
+- Price (USD): $43,500
+- Fuel: hybrid
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,226,10,,False,False,True,True
+116,K) Bulk realistic,bulk11,What warranty does Corolla Cross HEV have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,267,8,refusal without asking clarifying info/next step,True,False,False,True
+117,K) Bulk realistic,bulk11,how many airbags does Veloz have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,253,8,refusal without asking clarifying info/next step,True,False,False,True
+118,K) Bulk realistic,bulk11,how much is Raize,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Raize — Price (USD): $26,800
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,182,10,,False,False,True,True
+119,K) Bulk realistic,bulk11,what is the transmission of Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+120,K) Bulk realistic,bulk11,how many seats does COROLLA CROSS GASOLINE have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,291,8,refusal without asking clarifying info/next step,True,False,False,True
+121,K) Bulk realistic,bulk12,Explain the main safety features of Fortuner Legender in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+122,K) Bulk realistic,bulk12,summary of Vios,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Vios in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,173,8,refusal without asking clarifying info/next step,True,False,False,True
+123,K) Bulk realistic,bulk12,ground clearance of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+124,K) Bulk realistic,bulk12,does Yaris Cross HEV have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,268,8,refusal without asking clarifying info/next step,True,False,False,True
+125,K) Bulk realistic,bulk12,specs of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Corolla Cross HEV — key specifications (official data):
+- Price (USD): $49,900
+- Seats: 5
+- Fuel: hybrid
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,237,10,,False,False,True,True
+126,K) Bulk realistic,bulk12,Explain the difference between trims/variants for Veloz,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+127,K) Bulk realistic,bulk12,how many airbags does Raize have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,233,8,refusal without asking clarifying info/next step,True,False,False,True
+128,K) Bulk realistic,bulk12,how much is Hilux Revo Rally,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Hilux Revo Rally — Price (USD): $50,600
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,209,10,,False,False,True,True
+129,K) Bulk realistic,bulk12,what is the transmission of COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,291,8,refusal without asking clarifying info/next step,True,False,False,True
+130,K) Bulk realistic,bulk12,how many seats does Fortuner Legender have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+131,K) Bulk realistic,bulk13,What are the available colors for Vios?,RAG,CSV_METHOD,False,semantic-official,colors from KB,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+132,K) Bulk realistic,bulk13,summary of Hiace 12-seater,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Hiace 12-seater in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,196,8,refusal without asking clarifying info/next step,True,False,True,True
+133,K) Bulk realistic,bulk13,ground clearance of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Yaris Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,271,8,refusal without asking clarifying info/next step,True,False,False,True
+134,K) Bulk realistic,bulk13,does Corolla Cross HEV have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,268,8,refusal without asking clarifying info/next step,True,False,False,True
+135,K) Bulk realistic,bulk13,specs of Veloz,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Veloz — key specifications (official data):
+- Price (USD): $35,900
+- Seats: 7
+- Fuel: gasoline
+- Body type: MVP
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,230,10,,False,False,True,True
+136,K) Bulk realistic,bulk13,What warranty does Raize have in Cambodia?,RAG,CSV_METHOD,False,semantic-official,warranty from KB,"Thanks. I don’t have 'transmission' captured for Raize in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,238,8,refusal without asking clarifying info/next step,True,False,False,True
+137,K) Bulk realistic,bulk13,how many airbags does Hilux Revo Rally have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for Hilux Revo Rally in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,1,False,260,8,refusal without asking clarifying info/next step,True,False,False,True
+138,K) Bulk realistic,bulk13,how much is COROLLA CROSS GASOLINE,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+COROLLA CROSS GASOLINE — Price (USD): $47,900
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,235,10,,False,False,True,True
+139,K) Bulk realistic,bulk13,what is the transmission of Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Fortuner Legender in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,265,8,refusal without asking clarifying info/next step,True,False,False,True
+140,K) Bulk realistic,bulk13,how many seats does Vios have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+141,K) Bulk realistic,bulk14,Explain the main safety features of Hiace 12-seater in simple words,RAG,CSV_METHOD,False,semantic-official,explain safety; should be agent-like,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True
+142,K) Bulk realistic,bulk14,summary of Yaris Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-summary,summary from CSV,"Thanks. I don’t have a summary captured for Yaris Cross HEV in the current dataset yet.
+Sources: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,1,False,205,8,refusal without asking clarifying info/next step,True,False,False,True
+143,K) Bulk realistic,bulk14,ground clearance of Corolla Cross HEV,CSV_METHOD,CSV_METHOD,True,structured-feature,ground clearance from CSV,"Thanks. I don’t have 'ground_clearance' captured for Corolla Cross HEV in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,1,False,271,8,refusal without asking clarifying info/next step,True,False,False,True
+144,K) Bulk realistic,bulk14,does Veloz have apple carplay,CSV_METHOD,CSV_METHOD,True,structured-feature,carplay yes/no from CSV,"Thanks. I don’t have 'apple_carplay' captured for Veloz in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,1,False,259,8,refusal without asking clarifying info/next step,True,False,False,True
+145,K) Bulk realistic,bulk14,specs of Raize,CSV_METHOD,CSV_METHOD,True,structured-specs,specs from CSV,"Raize — key specifications (official data):
+- Price (USD): $26,800
+- Seats: 5
+- Fuel: gasoline
+- Body type: SUV
+Sources: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/raize/raize.html#specifications,1,False,210,10,,False,False,True,True
+146,K) Bulk realistic,bulk14,Explain the difference between trims/variants for Hilux Revo Rally,RAG,SYSTEM,False,semantic-official,variant explanation from KB,"Tell me a model name and what you want (price, specs, feature, compare, or recommend).
+[PIPELINE=SYSTEM]",,0,False,104,7,no sources for an explanatory query,False,False,False,False
+147,K) Bulk realistic,bulk14,how many airbags does COROLLA CROSS GASOLINE have,CSV_METHOD,CSV_METHOD,True,structured-feature,airbags from CSV,"Thanks. I don’t have 'airbags' captured for COROLLA CROSS GASOLINE in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,1,False,286,8,refusal without asking clarifying info/next step,True,False,False,True
+148,K) Bulk realistic,bulk14,how much is Fortuner Legender,CSV_METHOD,CSV_METHOD,True,structured-price,price from CSV,"Sure — here are the official prices from our dataset:
+
+Fortuner Legender — Price (USD): $65,500
+Sources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,1,False,209,10,,False,False,True,True
+149,K) Bulk realistic,bulk14,what is the transmission of Vios,CSV_METHOD,CSV_METHOD,True,structured-feature,transmission from CSV,"Thanks. I don’t have 'transmission' captured for Vios in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/vios/vios.html#specifications,1,False,235,8,refusal without asking clarifying info/next step,True,False,False,True
+150,K) Bulk realistic,bulk14,how many seats does Hiace 12-seater have,CSV_METHOD,CSV_METHOD,True,structured-feature,seats from CSV,"Thanks. I don’t have 'transmission' captured for Hiace 12-seater in the current dataset yet.
+If you want, I can share the official page link we used.
+Sources: https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications
+[PIPELINE=CSV_METHOD]",https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,1,False,258,8,refusal without asking clarifying info/next step,True,False,True,True

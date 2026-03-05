@@ -1,0 +1,62 @@
+Model: Toyota Hilux Revo Rally
+Price (USD): 50600
+Body type: Pickup
+Seating capacity: 5
+Fuel: diesel
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & horn
+- Apple Carplay And Android Auto: Wireless
+- Audio System: 9-inch touchscreen display, Bluetooth, 9 JBL speakers with subwoofer
+- Blind Spot Monitor Bsm: Included
+- Body Type: Pickup
+- Charging Ports: 12V (x2)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Included
+- Daytime Running Lights: Included
+- Displacement: 2,755 cc
+- Drive Type: Four-wheel drive (4WD)
+- Emergency Stop Signal: Included
+- Engine Type: 2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC
+- Fog Lamps: LED
+- Front: 1,540 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x2)
+- Fuel Tank Capacity: 80 L
+- Gross Vehicle Weight: 2,910 kg
+- Ground Clearance: 310 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 2,110 kg
+- Length   Width   Height: 5,325 / 1,855 / 1,815 mm
+- Leveling: Automatic
+- Maximum Output: 201 HP (150 kW) @ 3,400 RPM
+- Maximum Torque: 500 Nm @ 1,600 - 2,800 RPM
+- Minimum Turning Radius Tire: 5.8 m
+- Multiinformation Display Mid: 4.2-inch
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x2), rear (x4)
+- Rear: 1,550 mm
+- Reverse Camera: Included
+- Safety Rating: 4 stars
+- Seating Capacity: 5
+- Second Row: 3-point ELR (x3)
+- Side View Mirrors: Power adjustable, retractable, turn signal, welcome light
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tire, alloy wheel
+- Srs Airbags: 7 (1 driver, 1 driver's knee, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Manual tilt & telescopic with electric lock
+- Steering Type: Variable Flow Control (VFC) power steering
+- Steering Wheel Controls: Audio, telephone, voice recognition, MID, Adaptive Cruise Control, Lane Departure Alert
+- Tire  Disc Wheels: 265/60 R18 aluminum
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: 6-speed automatic
+- Type: Bi-beam LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 3,085 mm
+- Windshield Wipers: Intermittent, time adjustable, mist
+- Wireless Charging: Not available
+
+Source: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications

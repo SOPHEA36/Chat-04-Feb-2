@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Veloz-PP-2BY-0425
+Brand: Toyota
+Model: Toyota Veloz PP
+Year: 2024
+Price (USD): 30900.0
+Mileage (km): 15512
+Body Type: MPV
+Body Color: Black
+Engine: 1.5 L
+Fuel: gasoline
+Transmission: 6-speed Automatic
+Plate No: PP-2BY-0425
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html

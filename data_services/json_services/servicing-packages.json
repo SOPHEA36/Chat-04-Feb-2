@@ -1,0 +1,35 @@
+{
+  "url": "https://www.toyota.com.kh/en/servicing-and-support/servicing-packages.html",
+  "page_title": "Servicing Packages | Toyota Cambodia",
+  "page_type": "servicing_packages",
+  "scraped_at": "2026-02-15T21:07:12.480674",
+  "content": {
+    "packages": [
+      {
+        "duration": "1 year",
+        "discount_percentage": 5,
+        "services_included": 4,
+        "inspections_included": 4,
+        "additional_benefit": "5% discount on General Repair and Body & Paint"
+      },
+      {
+        "duration": "2 years",
+        "discount_percentage": 10,
+        "services_included": 8,
+        "inspections_included": 8,
+        "additional_benefit": "10% discount on General Repair and Body & Paint"
+      },
+      {
+        "duration": "3 years",
+        "discount_percentage": 15,
+        "services_included": 12,
+        "inspections_included": 12,
+        "additional_benefit": "15% discount on General Repair and Body & Paint"
+      }
+    ],
+    "description": "Servicing Coupon packages provide discounted periodic maintenance with extra benefits"
+  },
+  "raw_text": "1-year Servicing Coupon\nOur 1-year Servicing Coupon entitles you to:\n5% discount on four periodic maintenance services\nFour under-vehicle inspections valid for one year\nEnjoy an additional 5% discount on any General Repair or Body and Paint service when you sign up as a member during your purchase.\n2-year Servicing Coupon\nOur 2-year Servicing Coupon entitles you to:\n10% discount on eight periodic maintenance services\nEight under-vehicle inspections valid for two years\nEnjoy an additional 10% discount on any General Repair or Body and Paint service when you sign up as a member during your purchase.\n3-year Servicing Coupon\nOur 3-year Servicing Coupon entitles you to:\n15% discount on 12 periodic maintenance services\n12 under-vehicle inspections valid for three years\nEnjoy an additional 15% discount on any General Repair or Body and Paint service when you sign up as a member during your purchase.",
+  "snapshot_html": "/Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb/data/json/services/_snapshots/servicing-packages.html",
+  "snapshot_sha256": "f52e89c2f30ddaa4456d5f4280bb8437284f3553df432b515728e687cf462720"
+}

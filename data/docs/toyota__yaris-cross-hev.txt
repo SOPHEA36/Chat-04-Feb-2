@@ -1,0 +1,62 @@
+Model: Toyota Yaris Cross HEV
+Price (USD): 43500
+Body type: SUV
+Fuel: hybrid
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobiliser & alarm
+- Apple Carplay Or Android Auto: Included
+- Audio System: 10.1-inch
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: Rear USB type-C (x2)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2)
+- Cruise Control: With full speed range adaptive
+- Daytime Running Lights: Included
+- Displacement: 1,496 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHV Chain Drive with Dual VVT-i
+- Front: 1,525 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR)
+- Fuel Tank Capacity: 36 L
+- Gross Vehicle Weight: 1,705 kg
+- Ground Clearance: 210 mm
+- Headup Display Hud: Not available
+- High Mount Stop Lamp: LED
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 1,285 kg
+- Length   Width   Height: 4,310 / 1,770 / 1,615 mm
+- Levelling: Manual
+- Maximum Output: 91 HP (67 kW) @ 5,500 RPM
+- Maximum Torque: 121 Nm @ 4,800 RPM
+- Minimum Turning Radius Tire: 5.2 m
+- Multiinformation Display Mid: 7-inch digital
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x2), rear (x2)
+- Rear: 1,520 mm
+- Rear Window Defogger: Included
+- Reverse Camera: Included
+- Safety Rating: 5 stars
+- Seating Capacity: 5
+- Second Row: 3-point Emergency Locking Retractor (ELR)
+- Side View Mirrors: Auto retractable, LED welcome light
+- Smart Entry: Included
+- Spare Tire  Rim: 205/65R16 steel
+- Srs Airbags: 6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Tilt & telescopic without lock
+- Steering Type: Rack & Pinion
+- Steering Wheel Controls: Audio, Bluetooth, MID, Adaptive Cruise Control, Lane Keeping Assist
+- Tire  Disc Wheels: 215/55R18 alloy
+- Tire Pressure Warning System Tpws: Not available
+- Transmission: CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,620 mm
+- Windshield Wipers: Intermittent, time adjustable, mist
+- Wireless Charging: Included
+
+Source: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color

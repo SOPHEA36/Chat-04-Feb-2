@@ -1,0 +1,62 @@
+Model: Toyota Hiace 16-seater
+Price (USD): 49900
+Body type: Bus
+Seating capacity: 16
+Fuel: diesel
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Not available
+- Apple Carplay And Android Auto: Not available
+- Audio System: 2 speakers
+- Blind Spot Monitor Bsm: Not available
+- Body Type: Bus
+- Charging Ports: Not available
+- Child Locks: Not available
+- Child Restraint System: Not available
+- Cruise Control: Not available
+- Daytime Running Lights: Not available
+- Displacement: 2,494 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Not available
+- Engine Type: 2.5 L, 4-cylinder diesel, in-line
+- Fifth Row: 4 Fold-up
+- Fog Lamps: Not available
+- Fourth Row: 3
+- Front: 3-point emergency locking retractor (ELR) with pretensioner (x2)
+- Front Row: 3 4-way manual adjustable (driver and front passenger only)
+- Fuel Tank Capacity: 70 L
+- Gross Vehicle Weight: 3,300 kg
+- Ground Clearance: 185 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Not available
+- Ignition: Key
+- Kerb Weight: 2,145 kg
+- Length   Width   Height: 5,380 / 1,880 / 2,285 mm
+- Leveling: Not available
+- Maximum Output: 102 HP (75 kW) @ 3,600 RPM
+- Maximum Torque: 260 Nm @ 1,600 RPM
+- Minimum Turning Radius Tire: 6.2 m
+- Multiinformation Display Mid: Segment LCD
+- Panoramic View Monitor Pvm: Not available
+- Parking Sensors: Not available
+- Rear: 2-point fixed (x9)
+- Reverse Camera: Included
+- Seating Capacity: 16
+- Second Row: 3
+- Side View Mirrors: Included
+- Smart Entry: Not available
+- Spare Tire  Rim: Ground tire
+- Srs Airbags: 2 (1 driver, 1 front passenger)
+- Steering Column: Manual tilt
+- Third Row: 3
+- Tire  Disc Wheels: 195 / R15 C
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: 5 M/T
+- Type: Halogen
+- Vehicle Stability Control Vsc: Not available
+- Wheelbase: 3,110 mm
+- Windshield Wipers: Intermittent
+- Wireless Charger: TBC
+
+Source: https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications

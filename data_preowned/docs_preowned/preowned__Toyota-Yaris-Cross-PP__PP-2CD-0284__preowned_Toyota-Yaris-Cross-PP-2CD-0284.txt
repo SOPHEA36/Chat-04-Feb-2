@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Yaris-Cross-PP-2CD-0284
+Brand: Toyota
+Model: Toyota Yaris Cross PP
+Year: 2025
+Price (USD): 34900.0
+Mileage (km): 4310
+Body Type: SUV
+Body Color: White Pearl
+Engine: 1.5 L
+Fuel: gasoline
+Transmission: 7-speed CVT
+Plate No: PP-2CD-0284
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html

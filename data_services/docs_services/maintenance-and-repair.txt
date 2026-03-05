@@ -1,0 +1,114 @@
+Title: Maintenance And Repair
+
+url: https://www.toyota.com.kh/en/servicing-and-support/maintenance-and-repair.html
+page_title: Maintenance & Repair | Toyota Cambodia
+page_type: maintenance
+scraped_at: 2026-02-15T21:07:04.451287
+content:
+- service_packages:
+- - service: Service A
+- - interval: 3 MONTHS OR 5,000 KM - 34 point check
+- - price_usd: 40
+- - parts:
+- - - Engine oil
+- - - Grease
+- - - Gasket oil pan
+- - service: Service B
+- - interval: 6 MONTHS OR 10,000 KM - 41 point check
+- - price_usd: 55
+- - parts:
+- - - Engine oil
+- - - Grease
+- - - Gasket oil pan
+- - - Oil filter
+- - service: Service C
+- - interval: 12 MONTHS OR 20,000 KM - 46 point check
+- - price_usd: 79
+- - parts:
+- - - Engine oil
+- - - Grease
+- - - Gasket oil pan
+- - - Oil filter
+- - - A/C cleaner
+- - service: Service D
+- - interval: 24 MONTHS OR 40,000 KM - 53 point check
+- - price_usd: 107
+- - parts:
+- - - Engine oil
+- - - Grease
+- - - Gasket oil pan
+- - - A/C cleaner
+- - - Brake fluid
+- - - Gear oil
+- - - Injector cleaner
+- general_repair:
+- - engine:
+- - - Engine unable to start
+- - - Engine not receiving power
+- - - Engine light is on
+- - - Excessive engine vibration
+- - - Hybrid vehicle engine issues
+- - electrical:
+- - - Hybrid vehicle electrical system faults
+- - - CNG vehicle electrical system faults
+- - - Modified vehicle electrical system faults
+- - - Fire hazards
+- - - Undeployed airbags
+- - - Our skilled team of certified technicians are well-stocked and equipped with the latest tools. They are trained to carry out any body and paint repairs with the highest care and precision.
+- maintenance_interval: Every 5,000 kilometers or 3 months, whichever comes first
+raw_text: For your Toyota to perform at its best, we strongly recommend periodic maintenance. Through regularly scheduled servicing, we can perform inspections, tests, and parts replacements if necessary.
+Servicing your vehicle at regular intervals (every 5,000 kilometers or three months, whichever comes first), will help your vehicle achieve:
+Maximum performance
+Greater reliability
+A longer lifespan
+Regular servicing and inspections are vital to ensuring your vehicle's safety and dependability on the road. Only with regular and proper maintenance can your Toyota be utilized to its full potential.
+SERVICE A (3 MONTHS OR 5,000 KM - 34 point check)
+Price starting from	US$40
+Replacement parts
+Engine oil
+Grease
+Gasket oil pan
+SERVICE B (6 MONTHS OR 10,000 KM - 41 point check)
+Price starting from	US$55
+Replacement parts
+Engine oil
+Grease
+Gasket oil pan
+Oil filter
+SERVICE C (12 MONTHS OR 20,000 KM - 46 point check)
+Price starting from	US$79
+Replacement parts
+Engine oil
+Grease
+Gasket oil pan
+Oil filter
+A/C cleaner
+SERVICE D (24 MONTHS OR 40,000 KM - 53 point check)
+Price starting from	US$107
+Replacement parts
+Engine oil
+Grease
+Gasket oil pan
+A/C cleaner
+Brake fluid
+Gear oil
+Injector cleaner
+Toyota prides itself in maintaining and returning your vehicles to their optimal condition. We trust in our expertise and services to safeguard your driving experience.
+Engine Compartment
+These are some of the common engine-related issues that we handle:
+Engine unable to start
+Engine not receiving power
+Engine light is on
+Excessive engine vibration
+Hybrid vehicle engine issues
+Others
+Electrical System
+These are some of the common electrical system issues that we handle:
+Hybrid vehicle electrical system faults
+CNG vehicle electrical system faults
+Modified vehicle electrical system faults
+Fire hazards
+Undeployed airbags
+Our skilled team of certified technicians are well-stocked and equipped with the latest tools. They are trained to carry out any body and paint repairs with the highest care and precision.
+snapshot_html: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb/data/json/services/_snapshots/maintenance-and-repair.html
+snapshot_sha256: 68154a0b6c1b10fef17a5fa4eb249441b8001995967e8e7a82a44fb3945c3193

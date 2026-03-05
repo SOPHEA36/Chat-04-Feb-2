@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Raize-PP-2BT-9148
+Brand: Toyota
+Model: Toyota Raize PP
+Year: 2023
+Price (USD): 23300.0
+Mileage (km): 26142
+Body Type: SUV
+Body Color: White
+Engine: 1.0 L
+Fuel: gasoline
+Transmission: 7-speed CVT
+Plate No: PP-2BT-9148
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html

@@ -1,0 +1,62 @@
+Model: Toyota Land Cruiser 250 Gasoline
+Price (USD): 150000
+Body type: SUV
+Seating capacity: 7
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & horn
+- Apple Carplay And Android Auto: wireless
+- Audio System: 12.3-inch touchscreen, Bluetooth, 14 speakers
+- Blind Spot Monitor Bsm: Not available
+- Body Type: SUV
+- Charging Ports: 12V (x1), FRONT x 2, REAR1 (x2), REAR2 (x2)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Included
+- Daytime Running Lights: LED
+- Displacement: 2,393 cc
+- Drive Type: Four-wheel drive (4WD)
+- Emergency Stop Signal: Included
+- Engine Type: 2.4 L, T24A-FTS (GASOLINE) Turbo
+- Fog Lamps: LED
+- Front: 1,585 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x2)
+- Fuel Tank Capacity: 80 L
+- Gross Vehicle Weight: 2,560 kg
+- Ground Clearance: 215.3 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 2,380 kg
+- Length   Width   Height: 4925 x 1980 x 1935 mm
+- Leveling: Automatic
+- Maximum Output: 281 HP (207 kW) @ 6,000RPM
+- Maximum Torque: 430 Nm @ 1,700 - 3,600 RPM
+- Minimum Turning Radius Tire: 5.8 m
+- Multiinformation Display Mid: 12.3-inch TFT
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x4), rear (x4)
+- Rear: 1,605 mm
+- Reverse Camera: Included
+- Seating Capacity: 7
+- Second Row: 3-point ELR (x3)
+- Side View Mirrors: Power adjustable, reverse, camera, light
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tire
+- Srs Airbags: 10 (1 driver, 1 driver's knee, 1 front passenger, 1 passenger's knee, 3 side, 3 curtain shield)
+- Steering Column: ELEC-TILT&TELESCO,W/O LOCK
+- Steering Type: Variable Flow Control (VFC) power steering with Adaptive Variable Suspension system
+- Steering Wheel Controls: Audio, phone, voice recognition, MID
+- Third Row: 3-point ELR (x2)
+- Tire  Disc Wheels: 265/55 R19, aluminum
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: 8-speed automatic
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2850 mm
+- Windshield Wipers: Rain-sensing
+- Wireless Charging: Available
+
+Source: https://www.toyota.com.kh/en/models/land-cruiser-250/land-cruiser-250-gasoline.html#specifications

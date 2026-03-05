@@ -1,0 +1,68 @@
+Model: Toyota Vios
+Price (USD): 33900
+Body type: Sedan
+Seating capacity: 5
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Alarm & immobilizer
+- Apple Carplay And Android Auto: Included
+- Audio System: 9-inch touchscreen, Bluetooth, USB
+- Automatic High Beam Ahb: Included
+- Blind Spot Monitor Bsm: With Rear Cross Traffic Alert (RCTA)
+- Body Type: Sedan
+- Charging Ports: USB (x4)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (rear x2)
+- Daytime Running Lights: LED
+- Displacement: 1,329 cc
+- Drive Mode Select: Not available
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.3 L, 4-cylinder gasoline, in-line, 16-valve DOHC, Dual VVT-i
+- Fog Lamps: Not available
+- Front: 3-point emergency locking retractor (ELR) (x2)
+- Fuel Tank Capacity: 40 L
+- Fullspeed Range Adaptive Cruise Control Acc: Included
+- Ground Clearance: 160 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 1,060 kg
+- Lane Departure Prevention Ldp: Included
+- Lane Departure Warning Ldw: Included
+- Lane Keeping Control Lkc: Included
+- Length   Width   Height: 4,425 / 1,740 / 1,495 mm
+- Leveling: Manual
+- Maximum Output: 96 HP (72 kW) @ 6,000 RPM
+- Maximum Torque: 122 Nm @ 4,200 RPM
+- Minimum Turning Radius Tire: 4.8 m
+- Multiinformation Display Mid: 7-inch TFT
+- Panoramic View Monitor Pvm: Not available
+- Parking Brake: Electric Parking Brake (EPB) with auto hold
+- Parking Sensors: Front (x2), rear (x4)
+- Precollision Braking Pcb: Included
+- Precollision Warning Pcw: Included
+- Rear: 1,510 mm
+- Reverse Camera: Included
+- Safety Rating: 5 stars
+- Seating Capacity: 5
+- Second Row: 3-point ELR (x3)
+- Side View Mirrors: Auto retractable, turn signal
+- Smart Entry: Included
+- Spare Tire  Rim: 195/60 R16, alloy
+- Srs Airbags: 6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Tilt & telescopic
+- Steering Type: Electric power steering
+- Steering Wheel Controls: Audio, Bluetooth, MID, Adaptive Cruise Control, Lane Keeping Assist
+- Tire  Disc Wheels: 195/60 R16, alloy
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,620 mm
+- Windshield Wipers: Intermittent, time adjust
+- Wireless Charging: Not available
+
+Source: https://www.toyota.com.kh/en/models/vios/vios.html#specifications

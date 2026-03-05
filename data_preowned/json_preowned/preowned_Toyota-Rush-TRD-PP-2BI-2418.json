@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Rush TRD PP",
+  "price": "US$24,900",
+  "details": {
+    "model_year": "2020",
+    "mileage": "91,191 Km",
+    "body_colour": "White",
+    "body_type": "SUV",
+    "engine": "1.5 L",
+    "transmission": "4-speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-TRD-PP-2BI-2418.html"
+}

@@ -1,0 +1,61 @@
+Model: Toyota Raize
+Price (USD): 26800
+Body type: SUV
+Seating capacity: 5
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & alarm
+- Apple Carplay And Android Auto: Included
+- Audio System: 8-inch touchscreen display, Bluetooth, USB, 6 speakers
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: USB(x3), cigarette lighter socket (x1)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Not available
+- Daytime Running Lights: Included
+- Displacement: 998 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.0 L, 3-cylinder gasoline, in-line, 12-valve DOHC, DVVT
+- Fog Lamps: Bulb
+- Front: 1,475 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x2)
+- Fuel Tank Capacity: 36 L
+- Gross Vehicle Weight: 1,680 kg
+- Ground Clearance: 200 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 1,035 kg
+- Length   Width   Height: 4,030 / 1,710 / 1,635 mm
+- Leveling: Not available
+- Maximum Output: 96 HP (72 kW) @ 6,000 RPM
+- Maximum Torque: 140 Nm @ 4,000 RPM
+- Minimum Turning Radius Tire: 5.1 m
+- Multiinformation Display Mid: 7-inch TFT
+- Panoramic View Monitor Pvm: Not available
+- Parking Sensors: Front (x2), rear (x2)
+- Rear: 1,470 mm
+- Reverse Camera: Included
+- Seating Capacity: 5
+- Second Row: 3-point ELR (x3) with pretensioner and force limiter (x2)
+- Side View Mirrors: Power adjustable, auto retractable
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tyre alloy
+- Srs Airbags: 6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: With tilt
+- Steering Type: Electronic power steering
+- Steering Wheel Controls: Power mode, multi display, audio, paddle shift
+- Tire  Disc Wheels: 205/60 R17 alloy
+- Tire Pressure Warning System Tpws: Included
+- Transmission Type: 7-speed CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,525 mm
+- Windshield Wipers: Intermittent, speed sensor, mist
+- Wireless Charger: Not available
+
+Source: https://www.toyota.com.kh/en/models/raize/raize.html#specifications

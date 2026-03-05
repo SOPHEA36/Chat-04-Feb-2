@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Rush-TRD-PP-2BI-2418
+Brand: Toyota
+Model: Toyota Rush TRD PP
+Year: 2020
+Price (USD): 24900.0
+Mileage (km): 91191
+Body Type: SUV
+Body Color: White
+Engine: 1.5 L
+Fuel: gasoline
+Transmission: 4-speed Automatic
+Plate No: RUSH-TRD-PP
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-TRD-PP-2BI-2418.html

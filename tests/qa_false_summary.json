@@ -1,0 +1,29 @@
+{
+  "result": {
+    "passed": 121,
+    "total": 123,
+    "pct": 98.4
+  },
+  "groups": {
+    "CSV_METHOD -> SYSTEM": 1,
+    "CSV_METHOD -> RAG": 1
+  },
+  "false_cases": [
+    {
+      "index": 98,
+      "q": "difference between hilux revo and revo rocco",
+      "expected_pipeline": "CSV_METHOD",
+      "actual_pipeline": "SYSTEM",
+      "why": "",
+      "answer_preview": "Which two Toyota models do you want to compare? Example: compare Veloz vs Vios"
+    },
+    {
+      "index": 102,
+      "q": "does fortuner have cruise control",
+      "expected_pipeline": "CSV_METHOD",
+      "actual_pipeline": "RAG",
+      "why": "",
+      "answer_preview": "I found relevant official text for Toyota Fortuner Legender. Here are the most relevant snippets:\n- - Cruise Control: Included\n- - Steering Wheel Controls: Audio, telephone, voice recognition, MID, Adaptive Cruise Control, Lane Departure Alert\n- Model: Toyota Fortuner Legender\n- - Hillstart Assist Control: Included\n- - Vehicle Stability Control Vsc: Include\n- - Vehicle Stability Control Vsc: Included\nSources: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications"
+    }
+  ]
+}

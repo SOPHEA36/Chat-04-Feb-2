@@ -1,0 +1,62 @@
+Model: Toyota Corolla Cross HEV
+Price (USD): 49900
+Body type: SUV
+Seating capacity: 5
+Fuel: hybrid
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & alarm
+- Apple Carplay And Android Auto: Included
+- Audio System: 10-inch display
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: Rear USB type-c (x2)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2)
+- Cruise Control: With full speed range adaptive
+- Daytime Running Lights: Included
+- Displacement: 1,798 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.8 L, 4-cylinder gasoline, in-line, 16-valve DOHC, Dual VVT-i
+- Front: 1,559 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR)
+- Fuel Tank Capacity: 36 L
+- Gross Vehicle Weight: 1,850 kg
+- Ground Clearance: 161 mm
+- Headup Display Hud: Not available
+- High Mount Stop Lamp: LED
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 1,430 kg
+- Length   Width   Height: 4,460 / 1,825 / 1,620 mm
+- Leveling: Manual
+- Maximum Output: 97 HP (72 kW) @ 5,200 RPM
+- Maximum Torque: 142 Nm @ 4,200 RPM
+- Minimum Turning Radius Tire: 5.2 m
+- Multiinformation Display Mid: 12.3-inch digital
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x2), rear (x4)
+- Rear: 1,571 mm
+- Rear Window Defogger: Included
+- Reverse Camera: Included
+- Seating Capacity: 5
+- Second Row: 3-point Emergency Locking Retractor (ELR)
+- Side View Mirrors: Auto retractable, LED welcome light
+- Smart Entry: Included
+- Spare Tire  Rim: T155/70 D17
+- Srs Airbags: 7 (1 driver,1 knee, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Tilt & telescopic
+- Steering Type: Electric power steering
+- Steering Wheel Controls: Adaptive Cruise Control, Lane Keeping Assist
+- Tire  Disc Wheels: 225/50 R18 Alloy
+- Tire Pressure Warning System Tpws: Included
+- Transmission Type: 7-speed CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,640 mm
+- Windshield Wipers: Automatic, rain sensor
+- Wireless Charging: Included
+
+Source: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html

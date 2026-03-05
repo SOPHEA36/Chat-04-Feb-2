@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Rush PP",
+  "price": "US$24,500",
+  "details": {
+    "model_year": "2020",
+    "mileage": "78,231 Km",
+    "body_colour": "White",
+    "body_type": "SUV",
+    "engine": "1.5 L",
+    "transmission": "4-speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BC-9704.html"
+}

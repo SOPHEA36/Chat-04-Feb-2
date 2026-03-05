@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Veloz-PP-2CB-8620
+Brand: Toyota
+Model: Toyota Veloz PP
+Year: 2025
+Price (USD): 33200.0
+Mileage (km): 13435
+Body Type: MPV
+Body Color: White Pearl
+Engine: 1.5 L
+Fuel: gasoline
+Transmission: 6-speed Automatic
+Plate No: PP-2CB-8620
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html

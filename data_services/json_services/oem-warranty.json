@@ -1,0 +1,30 @@
+{
+  "url": "https://www.toyota.com.kh/en/servicing-and-support/oem-warranty.html",
+  "page_title": "OEM Warranty | Toyota Cambodia",
+  "page_type": "warranty",
+  "scraped_at": "2026-02-15T21:06:56.299551",
+  "content": {
+    "coverage": {
+      "period": "36 months or 100,000 kilometers",
+      "transferable": true,
+      "description": "Our Toyota Cambodia warranty covers any defective components that are caused by a manufacturing or assembly fault under normal use with certain terms and conditions. The coverage is valid for a period of 36 months or 100,000 kilometers, whichever comes first. The warranty period begins on the date of the vehicle's first delivery and is fully transferable to subsequent vehicle owners."
+    },
+    "exclusions": [
+      {
+        "category": "Wear and tear, or expendable parts",
+        "description": "This warranty does not cover normal wear and tear on vehicle parts or expendable maintenance parts. Tires are covered under a separate warranty provided by the tire manufacturer."
+      },
+      {
+        "category": "External and environmental factors",
+        "description": "This warranty does not cover incidents beyond the manufacturer's control, such as cosmetic or surface corrosion from stone chips or paint scratches. It also does not cover damage or surface corrosion from the environment, including acid rain, airborne fall-out (e.g., chemicals, tree sap), salt, hail, windstorms, lightning, and floods."
+      },
+      {
+        "category": "Misuse, abuse, and aftermarket parts",
+        "description": "This warranty does not cover repairs and adjustments required due to misuse (e.g., racing, overloading), negligence, modification, alteration, tempering, disconnection, improper adjustments or repairs, accidents, and the use of aftermarket add-on parts or materials, or replacement of Toyota Genuine Parts without permission from TOYOTA (CAMBODIA) CO., LTD."
+      }
+    ]
+  },
+  "raw_text": "Wear and tear, or expendable parts\nThis warranty does not cover normal wear and tear on vehicle parts or expendable maintenance parts.\nTires\nTires are covered under a separate warranty provided by the tire manufacturer.\nExternal and environmental factors\nThis warranty does not cover incidents beyond the manufacturer's control, such as cosmetic or surface corrosion from stone chips or paint scratches. It also does not cover damage or surface corrosion from the environment, including acid rain, airborne fall-out (e.g., chemicals, tree sap), salt, hail, windstorms, lightning, and floods.\nMisuse, abuse, and aftermarket parts\nThis warranty does not cover repairs and adjustments required due to misuse (e.g., racing, overloading), negligence, modification, alteration, tempering, disconnection, improper adjustments or repairs, accidents, and the use of aftermarket add-on parts or materials, or replacement of Toyota Genuine Parts without permission from TOYOTA (CAMBODIA) CO., LTD.",
+  "snapshot_html": "/Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb/data/json/services/_snapshots/oem-warranty.html",
+  "snapshot_sha256": "752fc36f3df9fc42146624cda3d11ed1a97eaf52801ed328fe784d4a6deb8abd"
+}

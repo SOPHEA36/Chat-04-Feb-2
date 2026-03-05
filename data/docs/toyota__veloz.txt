@@ -1,0 +1,63 @@
+Model: Toyota Veloz
+Price (USD): 35900
+Body type: MVP
+Seating capacity: 7
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & alarm
+- Apple Carplay Or Android Auto: Included
+- Audio System: 9-inch display audio
+- Blind Spot Monitor Bsm: Included
+- Body Type: MVP
+- Charging Ports: Front (x2), Rear (x4)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2)
+- Cruise Control: Not available
+- Daytime Running Lights: Not available
+- Displacement: 1,496 cc
+- Drive Type: Front-wheel drive (FWD)
+- Emergency Stop Signal: Included
+- Engine Type: 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHC Chain Drive with Dual VVT-i
+- Front: 1,515 mm
+- Front Row: 2-point Emergency Locking Retractor (ELR)
+- Fuel Tank Capacity: 43 L
+- Gross Vehicle Weight: 1,735 kg
+- Ground Clearance: 190 mm
+- Headup Display Hud: Not available
+- High Mount Stop Lamp: LED
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 1,185 kg
+- Length   Width   Height: 4,475 / 1,750 / 1,700 mm
+- Levelling: Not available
+- Max Output: 105 HP (78 kW) @ 6,000 RPM
+- Max Torque: 138 Nm @ 4,200 RPM
+- Minimum Turning Radius Tire: 5.0 m
+- Multiinformation Display Mid: Digital
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Rear (x2)
+- Rear: 1,510 mm
+- Rear Window Defogger: Included
+- Reverse Camera: Included
+- Seating Capacity: 7
+- Second Row: 3-point Emergency Locking Retractor (ELR)
+- Side View Mirrors: Auto retractable with door interlock & foot lamp
+- Smart Entry: Included
+- Spare Tire  Rim: Ground Tire alloy
+- Srs Airbags: 6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Tilt & telescopic
+- Steering Type: Electric power steering
+- Steering Wheel Controls: Audio, telephone
+- Third Row: 2-point Emergency Locking Retractor (ELR)
+- Tire  Disc Wheels: 205/50 R17 alloy
+- Tire Pressure Warning System Tpws: Not available
+- Transmission: CVT
+- Type: LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,750 mm
+- Windshield Wipers: Intermittent, speed sensor, mist
+- Wireless Charging: Available
+
+Source: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications

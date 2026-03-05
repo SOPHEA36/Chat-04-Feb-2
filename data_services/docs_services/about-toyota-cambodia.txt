@@ -1,0 +1,139 @@
+Title: About Toyota Cambodia
+
+url: https://www.toyota.com.kh/en/discover-toyota/about-toyota-cambodia.html
+page_title: About Toyota Cambodia | Toyota Cambodia
+page_type: about
+scraped_at: 2026-02-15T21:06:48.105491
+content:
+- vision: To be the most reliable automobile distributor in Cambodia and the region by uniting people and cars, contributing to the society, and caring for the environment.
+- mission:
+- - Develop motorization in Cambodia and the region by uniting people and cars, contributing to the society, and caring for the environment.
+- - Constantly improve upon and provide the best quality products and services to all customers.
+- - Ensure that all our customers in Cambodia are the most satisfied car owners.
+- - Ensure that our staff and customers are proud of being members of Toyota Cambodia.
+- - Build and maintain a strong, trusting relationship among all stakeholders.
+- - Our service standards must exceed our customers' expectations. We must have a professional, sophisticated company culture that will impress our customers.
+- history:
+- - date: Feb 1993
+- - event: Acquired 1st License for Joint Venture Investment
+- - date: Apr 1995
+- - event: Acquired License as Toyota Authorized Service Station (TASS) From TMC
+- - date: Jul 1995
+- - event: Grand Opening of New Toyota Office, Phnom Penh
+- - date: Aug 1997
+- - event: Reopening of Toyota Office, after heavy damage by Civil War in July 1997
+- - date: Mar 2009
+- - event: Acquired License as Exclusive Solely Toyota Distributor with MOC
+- - date: Mar 2010
+- - event: Changed Company Name from TTHK to TOYOTA (CAMBODIA) CO., LTD.
+- - date: Feb 2011
+- - event: Opened 2S Branch at Phnom Penh: Phnom Penh Branch
+- - date: Oct 2011
+- - event: Opened 3S Branch at Battambang
+- - date: Jul 2012
+- - event: Opened 3S Branch at Siem Reap
+- - date: Feb 2014
+- - event: Opened 1S Branch at Phnom Penh: Boeung Keng Kang Branch
+- - date: Apr 2015
+- - event: Opened 2S Branch at Phnom Penh: Toul Kork Branch
+- - date: Aug 2016
+- - event: Opened 1S Branch at Phnom Penh: Teuk Thla Branch
+- - date: Dec 2016
+- - event: Opened Toyota Plus Branch at Phnom Penh
+- - date: July 2017
+- - event: Opened Logistic and Training Center (LTC) at Phnom Penh
+- - date: Oct 2017
+- - event: Opened 3S Branch at Phnom Penh: Bak Touk Branch
+- - date: Jan 2018
+- - event: Head Office Building Demolished
+- - date: Feb 2019
+- - event: Closed Toul Kork Branch
+- - date: Feb 2019
+- - event: Opened Toul Sangke Branch
+- - date: Oct 2019
+- - event: Close Phnom Penh Branch
+- - date: Jan 2020
+- - event: Grand Opening of the New Headquarters Building and Main Branch
+- - date: Jul 2022
+- - event: Closed old location of Siem Reap Banch
+- - date: Jul 2022
+- - event: Grand opening of new location of Siem Reap Branch
+- - date: Jul 2023
+- - event: Opened 1s Branch at Kampong Cham
+- - date: Nov 2023
+- - event: Opened 3s Branch at Mean Chey
+- - date: Nov 2023
+- - event: Opened Toyota Plus New Location at Mean Chey
+- - date: Apr 2024
+- - event: Closed Old Location of Battambang
+- - date: May 2024
+- - event: Opened New Location for Battambang
+- - date: Jul 2024
+- - event: Grand Opening Lexus Showroom
+raw_text: ABOUT
+TOYOTA CAMBODIA
+Feb 1993
+Apr 1995
+Jul 1995
+Aug 1997
+Mar 2009
+Mar 2010
+Feb 2011
+Oct 2011
+Jul 2012
+Feb 2014
+Apr 2015
+Aug 2016
+Dec 2016
+July 2017
+Oct 2017
+Jan 2018
+Feb 2019
+Feb 2019
+Oct 2019
+Jan 2020
+Jul 2022
+Jul 2022
+Jul 2023
+Nov 2023
+Nov 2023
+Apr 2024
+May 2024
+Jul 2024
+Acquired 1st License for Joint Venture Investment
+Acquired License as Toyota Authorized Service Station (TASS) From TMC
+Grand Opening of New Toyota Office, Phnom Penh
+Reopening of Toyota Office, after heavy damage by Civil War in July 1997
+Acquired License as Exclusive Solely Toyota Distributor with MOC
+Changed Company Name from TTHK to TOYOTA (CAMBODIA) CO., LTD.
+Opened 2S Branch at Phnom Penh: Phnom Penh Branch
+Opened 3S Branch at Battambang
+Opened 3S Branch at Siem Reap
+Opened 1S Branch at Phnom Penh: Boeung Keng Kang Branch
+Opened 2S Branch at Phnom Penh: Toul Kork Branch
+Opened 1S Branch at Phnom Penh: Teuk Thla Branch
+Opened Toyota Plus Branch at Phnom Penh
+Opened Logistic and Training Center (LTC) at Phnom Penh
+Opened 3S Branch at Phnom Penh: Bak Touk Branch
+Head Office Building Demolished
+Closed Toul Kork Branch
+Opened Toul Sangke Branch
+Close Phnom Penh Branch
+Grand Opening of the New Headquarters Building and Main Branch
+Closed old location of Siem Reap Banch
+Grand opening of new location of Siem Reap Branch
+Opened 1s Branch at Kampong Cham
+Opened 3s Branch at Mean Chey
+Opened Toyota Plus New Location at Mean Chey
+Closed Old Location of Battambang
+Opened New Location for Battambang
+Grand Opening Lexus Showroom
+To be the most reliable automobile distributor in Cambodia and the region by uniting people and cars, contributing to the society, and caring for the environment.
+Develop motorization in Cambodia and the region by uniting people and cars, contributing to the society, and caring for the environment.
+Constantly improve upon and provide the best quality products and services to all customers.
+Ensure that all our customers in Cambodia are the most satisfied car owners.
+Ensure that our staff and customers are proud of being members of Toyota Cambodia.
+Build and maintain a strong, trusting relationship among all stakeholders.
+Our service standards must exceed our customers' expectations. We must have a professional, sophisticated company culture that will impress our customers.
+snapshot_html: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb/data/json/services/_snapshots/about-toyota-cambodia.html
+snapshot_sha256: 82e54df6ee7093aaaffaf3b6afd87b402f51a1ec20af0e599348bd3be38a9a80

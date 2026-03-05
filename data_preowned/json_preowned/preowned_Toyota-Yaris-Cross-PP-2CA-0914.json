@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Yaris Cross PP",
+  "price": "US$34,500",
+  "details": {
+    "model_year": "2025",
+    "mileage": "11,515 Km",
+    "body_colour": "White Pearl",
+    "body_type": "SUV",
+    "engine": "1.5 L",
+    "transmission": "7-speed CVT",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html"
+}

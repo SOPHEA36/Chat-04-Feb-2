@@ -1,0 +1,62 @@
+Model: Toyota LAND CRUISER GR-S
+Price (USD): 198300
+Body type: SUV
+Seating capacity: 7
+Fuel: gasoline
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer, siren, intrusion & tilt sensor
+- Apple Carplay And Android Auto: Included
+- Audio System: 9-inch touchscreen display, Bluetooth, 10 JBL speakers with subwoofer
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: USB (x3), wireless (x1)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Included
+- Daytime Running Lights: LED
+- Displacement: 3,445 cc
+- Drive Type: Four-wheel drive (4WD)
+- Emergency Stop Signal: Included
+- Engine Type: 3.5 L, V6 twin-turbo gasoline, 24-valve DOHC
+- Fog Lamps: LED
+- Front: 1,667 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x2)
+- Fuel Tank Capacity: 110 L
+- Gross Vehicle Weight: 3,230 kg
+- Ground Clearance: 235 mm
+- Headup Display Hud: Included
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 2,615 kg
+- Length   Width   Height: 4,995 / 1,990 / 1,945 mm
+- Leveling: Automatic
+- Maximum Output: 409 HP (305 kW) @ 5,200 RPM
+- Maximum Torque: 650 Nm @ 2,000 – 3,600 RPM
+- Minimum Turning Radius Tire: 5.9 m
+- Multiinformation Display Mid: 12.3 inch TFT
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x4), rear (x4)
+- Rear: 1,668 mm
+- Reverse Camera: Included
+- Seating Capacity: 7
+- Second Row: 3-point ELR (x3) with outer adjuster and outer pretensioner (x3)
+- Side View Mirrors: Power adjustable, retractable, heating, reverse, camera, light, Blind Spot Monitor
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tire, alloy wheel
+- Srs Airbags: 10 (1 driver, 1 driver's knee, 2 cockpit sides, 1 front passenger, 2 side, 3 curtain shield)
+- Steering Column: Electric tilt & telescopic
+- Steering Type: Hydraulic power steering
+- Steering Wheel Controls: Audio, telephone, voice recognition, MID, Adaptive Cruise Control, Lane Departure Alert
+- Third Row: 3-point ELR (x2) with outer adjuster and outer pretensioner (x2)
+- Tire  Disc Wheels: 265/65 R18 alloy wheel
+- Tire Pressure Warning System Tpws: Included
+- Transmission Type: 10-speed automatic
+- Type: Adaptive High Beam System (AHS), sequential turn signal
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,850 mm
+- Windshield Wipers: Intermittent, rain-sensing
+- Wireless Charger: Included
+
+Source: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-gr-s.html#specifications

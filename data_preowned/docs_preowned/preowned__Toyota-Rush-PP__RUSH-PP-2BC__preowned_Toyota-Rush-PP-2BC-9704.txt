@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Rush-PP-2BC-9704
+Brand: Toyota
+Model: Toyota Rush PP
+Year: 2020
+Price (USD): 24500.0
+Mileage (km): 78231
+Body Type: SUV
+Body Color: White
+Engine: 1.5 L
+Fuel: gasoline
+Transmission: 4-speed Automatic
+Plate No: RUSH-PP-2BC
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BC-9704.html

@@ -1,0 +1,14 @@
+Toyota Certified Pre-Owned Listing
+Listing ID: preowned_Toyota-Corolla-Cross-PP-2BY-0075
+Brand: Toyota
+Model: Toyota Corolla Cross PP 2BY
+Year: 2024
+Price (USD): 43300.0
+Mileage (km): 8175
+Body Type: SUV
+Body Color: Black
+Engine: 1.8 L
+Fuel: gasoline
+Transmission: 7-Speed Automatic
+Plate No: PP-2BY-0075
+Source URL: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html

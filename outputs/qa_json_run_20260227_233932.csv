@@ -1,0 +1,226 @@
+id,question,expected_pipeline,actual_pipeline,ok,answer,sources
+T001,hi,SYSTEM,SYSTEM,True,"Hello! Welcome to Toyota Cambodia. I'm here to help you.
+
+You can ask me about:
+• Price & specs of any Toyota model
+• Features (CarPlay, 360 camera, airbags, seats)
+• Compare two models
+• Recommendations based on your budget
+• Pre-owned / used listings
+
+What would you like to know?",
+T002,hello,SYSTEM,SYSTEM,True,"Hello! Welcome to Toyota Cambodia. I'm here to help you.
+
+You can ask me about:
+• Price & specs of any Toyota model
+• Features (CarPlay, 360 camera, airbags, seats)
+• Compare two models
+• Recommendations based on your budget
+• Pre-owned / used listings
+
+What would you like to know?",
+T003,hey,SYSTEM,SYSTEM,True,"Hello! Welcome to Toyota Cambodia. I'm here to help you.
+
+You can ask me about:
+• Price & specs of any Toyota model
+• Features (CarPlay, 360 camera, airbags, seats)
+• Compare two models
+• Recommendations based on your budget
+• Pre-owned / used listings
+
+What would you like to know?",
+T004,thanks,SYSTEM,SYSTEM,True,You're welcome. What would you like to know about Toyota Cambodia?,
+T005,thank you,SYSTEM,SYSTEM,True,You're welcome. What would you like to know about Toyota Cambodia?,
+T006,bye,SYSTEM,SYSTEM,True,"Bye. If you need anything about Toyota models, price, specs, or services, just ask.",
+T007,reset,SYSTEM,SYSTEM,True,Reset done.,
+T008,/reset,SYSTEM,SYSTEM,True,Reset done.,
+T009,what is toyota cambodia warranty,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T010,oem warranty how many years,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T011,warranty period km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T012,maintenance and repair services,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T013,servicing package 3 years discount,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T014,what is included in servicing package,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T015,about toyota cambodia,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T016,who is toyota cambodia dealer,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T017,service center information,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T018,does warranty transfer to new owner,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T019,toyota cambodia oem warranty coverage,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T020,toyota warranty covered parts,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T021,toyota warranty not cover what,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T022,is paint covered under warranty,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T023,is battery covered under warranty,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T024,warranty for hybrid system,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T025,warranty for tires covered or not,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T026,warranty if i service outside toyota,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T027,warranty if modify car,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T028,warranty if flood damage,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T029,warranty terms and conditions,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T030,how to claim warranty toyota cambodia,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T031,what documents needed for warranty claim,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T032,where can i read oem warranty policy,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T033,does toyota cambodia warranty apply nationwide,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T034,does warranty follow the car or owner,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T035,warranty transfer to second owner,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T036,warranty for pre owned toyota,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T037,toyota cambodia service interval 5000 km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T038,service interval every how many months,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T039,periodic maintenance schedule,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T040,what is service a service b service c,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T041,service a price,RAG,SYSTEM,False,Which Toyota model price do you want?,
+T042,service b price,RAG,SYSTEM,False,Which Toyota model price do you want?,
+T043,service c price,RAG,SYSTEM,False,Which Toyota model price do you want?,
+T044,service d price,RAG,SYSTEM,False,Which Toyota model price do you want?,
+T045,what included in service a 5000 km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T046,what included in service b 10000 km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T047,what included in service c 20000 km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T048,what included in service d 40000 km,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T049,servicing coupon 1 year benefit,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T050,servicing coupon 2 years discount,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T051,servicing coupon 3 years discount,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T052,can i buy servicing package after purchase,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T053,servicing package membership discount,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T054,do you have free service package,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T055,maintenance and repair page info,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T056,toyota cambodia workshop services,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T057,body and paint service available,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T058,general repair service,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T059,hybrid repair service support,RAG,SYSTEM,False,"Tell me a model name and what you want (price, specs, feature, compare, recommend, or preowned).",
+T060,what maintenance does toyota recommend,RAG,CSV_METHOD,False,Sure. Tell me your budget (USD). Example: budget 40000,
+T061,why service every 5000 km,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T062,how to book service appointment,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T063,service center contact,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T064,service center location,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T065,toyota cambodia branches,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T066,where is toyota cambodia main branch,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T067,toyota cambodia dealer is who,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T068,toyota cambodia is official distributor,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T069,company profile toyota cambodia,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T070,toyota cambodia history,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T071,toyota cambodia mission and vision,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T072,what is toyota plus,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T073,toyota cambodia aftersales support,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T074,genuine parts policy,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T075,toyota genuine parts warranty,RAG,CSV_METHOD,False,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T076,price of corolla cross,CSV_METHOD,CSV_METHOD,True,"The **COROLLA CROSS GASOLINE** is priced at **$47,900** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T077,how much is corolla cross,CSV_METHOD,CSV_METHOD,True,"The **COROLLA CROSS GASOLINE** is priced at **$47,900** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T078,starting price corolla cross,CSV_METHOD,CSV_METHOD,True,"The **COROLLA CROSS GASOLINE** is priced at **$47,900** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T079,price of yaris cross,CSV_METHOD,CSV_METHOD,True,"The **Yaris Cross HEV** is priced at **$43,500** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T080,how much is yaris cross,CSV_METHOD,CSV_METHOD,True,"The **Yaris Cross HEV** is priced at **$43,500** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T081,price fortuner,CSV_METHOD,CSV_METHOD,True,"The **Fortuner Legender** is priced at **$65,500** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+T082,fortuner price,CSV_METHOD,CSV_METHOD,True,"The **Fortuner Legender** is priced at **$65,500** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+T083,price hilux revo,CSV_METHOD,CSV_METHOD,True,"The **Hilux Revo Rally** is priced at **$50,600** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+T084,hilux revo price,CSV_METHOD,CSV_METHOD,True,"The **Hilux Revo Rally** is priced at **$50,600** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+T085,vios price,CSV_METHOD,CSV_METHOD,True,"The **Vios** is priced at **$33,900** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+T086,veloZ price,CSV_METHOD,CSV_METHOD,True,"The **Veloz** is priced at **$35,900** (USD). Would you like to know more about its specs or features?",https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+T087,specs corolla cross,CSV_METHOD,CSV_METHOD,True,"Great question! Here's a quick spec overview for the **COROLLA CROSS GASOLINE**:
+
+**Price:** $47,900
+**Seats:** 5.0
+**Fuel:** Gasoline
+**Body type:** SUV
+**Transmission:** 7-speed CVT
+**Engine:** 1.8 L, 4-cylinder gasoline, in-line, 16-valve DOHC, Dual VVT-i",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T088,spec of corolla cross,CSV_METHOD,CSV_METHOD,True,"Great question! Here's a quick spec overview for the **COROLLA CROSS GASOLINE**:
+
+**Price:** $47,900
+**Seats:** 5.0
+**Fuel:** Gasoline
+**Body type:** SUV
+**Transmission:** 7-speed CVT
+**Engine:** 1.8 L, 4-cylinder gasoline, in-line, 16-valve DOHC, Dual VVT-i",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T089,specs yaris cross,CSV_METHOD,CSV_METHOD,True,"Great question! Here's a quick spec overview for the **Yaris Cross HEV**:
+
+**Price:** $43,500
+**Seats:** N/A
+**Fuel:** Hybrid
+**Body type:** SUV
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHV Chain Drive with Dual VVT-i",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T090,spec yaris cross,CSV_METHOD,CSV_METHOD,True,"Great question! Here's a quick spec overview for the **Yaris Cross HEV**:
+
+**Price:** $43,500
+**Seats:** N/A
+**Fuel:** Hybrid
+**Body type:** SUV
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHV Chain Drive with Dual VVT-i",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T091,specs fortuner,CSV_METHOD,CSV_METHOD,True,"Great question! Here's a quick spec overview for the **Fortuner Legender**:
+
+**Price:** $65,500
+**Seats:** 7.0
+**Fuel:** Diesel
+**Body type:** SUV
+**Transmission:** 6-speed automatic
+**Engine:** 2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+T092,summary corolla cross,CSV_METHOD,CSV_METHOD,True,"Sure! Here's a quick overview of the **COROLLA CROSS GASOLINE**:
+
+The COROLLA CROSS GASOLINE is a Gasoline-powered SUV priced at **$47,900**. It seats up to **5.0 passengers** and comes with a **7-speed CVT** transmission.",https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T093,summary fortuner,CSV_METHOD,CSV_METHOD,True,"Sure! Here's a quick overview of the **Fortuner Legender**:
+
+The Fortuner Legender is a Diesel-powered SUV priced at **$65,500**. It seats up to **7.0 passengers** and comes with a **6-speed automatic** transmission.",https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+T094,tell me about vios summary,CSV_METHOD,CSV_METHOD,True,"Sure! Here's a quick overview of the **Vios**:
+
+The Vios is a Gasoline-powered Sedan priced at **$33,900**. It seats up to **5.0 passengers** and comes with a **CVT** transmission.",https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+T095,compare veloz vs vios,CSV_METHOD,CSV_METHOD,True,"Here’s a quick comparison (official dataset): Veloz vs Vios
+- Price: $35,900 vs $33,900
+- Seats: 7.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: MVP vs Sedan
+- Transmission: CVT vs N/A","https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications"
+T096,compare corolla cross vs yaris cross,CSV_METHOD,CSV_METHOD,True,"Here’s a quick comparison (official dataset): COROLLA CROSS GASOLINE vs Yaris Cross HEV
+- Price: $47,900 vs $43,500
+- Seats: 5.0 vs N/A
+- Fuel: gasoline vs hybrid
+- Body type: SUV vs SUV
+- Transmission: N/A vs CVT","https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color"
+T097,which better fortuner or corolla cross,CSV_METHOD,CSV_METHOD,True,"Here’s a quick comparison (official dataset): COROLLA CROSS GASOLINE vs Fortuner Legender
+- Price: $47,900 vs $65,500
+- Seats: 5.0 vs 7.0
+- Fuel: gasoline vs diesel
+- Body type: SUV vs SUV
+- Transmission: N/A vs N/A","https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications, https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications"
+T098,difference between hilux revo and revo rocco,CSV_METHOD,CSV_METHOD,True,I couldn't find 'Hilux Revo Rocco' in the dataset.,
+T099,does veloz have apple carplay,CSV_METHOD,CSV_METHOD,True,Thanks. I don’t have that feature captured in the current dataset yet.,https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+T100,does corolla cross have 360 camera,CSV_METHOD,CSV_METHOD,True,Yes. The **COROLLA CROSS GASOLINE** includes **360° Panoramic View Monitor**.,https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+T101,does yaris cross have 6 airbags,CSV_METHOD,CSV_METHOD,True,"The **Yaris Cross HEV** has **SRS airbags**: **6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)**.",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T102,does fortuner have cruise control,CSV_METHOD,CSV_METHOD,True,Yes. The **Fortuner Legender** includes **Cruise control**.,https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+T103,does vios have reverse camera,CSV_METHOD,CSV_METHOD,True,Yes. The **Vios** includes **Reverse camera**.,https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+T104,recommend suv under 40000,CSV_METHOD,CSV_METHOD,True,What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV),
+T105,recommend toyota under 35000 gasoline,CSV_METHOD,CSV_METHOD,True,"Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.",https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+T106,i want suv budget 45000 hybrid,CSV_METHOD,CSV_METHOD,True,"Here are some Toyota models that match your preferences:
+
+1. Yaris Cross HEV
+   $43,500 | N/A seats | Hybrid | SUV
+
+Reply with a listing number (1–10) or model name to see more details.",https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+T107,suggest me a family car under 30000,CSV_METHOD,CSV_METHOD,True,What body type do you want? (SUV / Sedan / Pickup / MPV / Bus),
+T108,recommend 7 seater suv under 60000,CSV_METHOD,CSV_METHOD,True,What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV),
+T109,budget 40000,CSV_METHOD,CSV_METHOD,True,What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV),
+T110,i want suv,CSV_METHOD,CSV_METHOD,True,What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV),
+T111,gasoline,CSV_METHOD,CSV_METHOD,True,"Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+2. YARIS CROSS GASOLINE
+   $37,500 | N/A seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+
+(These may not fully meet your seat requirement.)","https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications"
+T112,pre owned fortuner,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+T113,used corolla cross,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html"
+T114,toyota certified pre owned,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+T115,second hand yaris cross price,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html"
+T116,preowned listings,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+T117,show me used cars in toyota cambodia,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+T118,pre owned 2024 under 35000,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html"
+T119,PP plate fortuner for sale,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+T120,mileage 8000 km used toyota,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+T121,year 2025 mileage 5000 used,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html"
+T122,show listing with plate PP-2,PREOWNED_RAG,PREOWNED_RAG,True,,"https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+T123,find plate PP-2CD-0284,PREOWNED_RAG,PREOWNED_RAG,True,,https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html

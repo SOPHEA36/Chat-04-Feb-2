@@ -1,0 +1,1182 @@
+PROJECT_ROOT: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2
+TESTS: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/tests/qa_tests_80.json
+OFFICIAL_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data/csv/vehicle_master.csv
+PREOWNED_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data_preowned/csv_preowned/preowned_master.csv
+chat_turn signature: (user_text: 'str', state: 'Dict[str, Any]', full_rows: 'List[Dict[str, Any]]', rag_engine: 'Any', preowned_engine: 'PreownedEngine', debug: 'bool' = False) -> 'Dict[str, Any]'
+
+ID: T001
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: price of yaris cross
+ANSWER:
+The **Yaris Cross HEV** is priced at **$43,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T002
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: how much is toyota raize
+ANSWER:
+The **Raize** is priced at **$26,800** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+ID: T003
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: what is the price of corolla cross
+ANSWER:
+The **COROLLA CROSS GASOLINE** is priced at **$47,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+--------------------------------------------------------------------------------
+ID: T004
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: starting price of hilux
+ANSWER:
+The **Hilux Revo Rally** is priced at **$50,600** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+--------------------------------------------------------------------------------
+ID: T005
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: cost of toyota veloz
+ANSWER:
+The **Veloz** is priced at **$35,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+ID: T006
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: how much does fortuner cost
+ANSWER:
+The **Fortuner Legender** is priced at **$65,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+ID: T007
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: price of toyota vios
+ANSWER:
+The **Vios** is priced at **$33,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T008
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: what is the price for camry
+ANSWER:
+The **Vios** is priced at **$33,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T009
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: how much is toyota alphard
+ANSWER:
+The **Vios** is priced at **$33,900** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T010
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: starting price for land cruiser
+ANSWER:
+The **Land Cruiser ZX** is priced at **$188,500** (USD). Would you like to know more about its specs or features?
+SOURCES: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications
+--------------------------------------------------------------------------------
+ID: T011
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: specs of yaris cross
+ANSWER:
+Great question! Here's a quick spec overview for the **Yaris Cross HEV**:
+
+**Price:** $43,500
+**Seats:** N/A
+**Fuel:** Hybrid
+**Body type:** SUV
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHV Chain Drive with Dual VVT-i
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T012
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: engine specs of toyota raize
+ANSWER:
+Great question! Here's a quick spec overview for the **Raize**:
+
+**Price:** $26,800
+**Seats:** 5.0
+**Fuel:** Gasoline
+**Body type:** SUV
+**Transmission:** 7-speed CVT
+**Engine:** 1.0 L, 3-cylinder gasoline, in-line, 12-valve DOHC, DVVT
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+ID: T013
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: tell me specifications of corolla cross
+ANSWER:
+Great question! Here's a quick spec overview for the **COROLLA CROSS GASOLINE**:
+
+**Price:** $47,900
+**Seats:** 5.0
+**Fuel:** Gasoline
+**Body type:** SUV
+**Transmission:** 7-speed CVT
+**Engine:** 1.8 L, 4-cylinder gasoline, in-line, 16-valve DOHC, Dual VVT-i
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+--------------------------------------------------------------------------------
+ID: T014
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: what engine does hilux use
+ANSWER:
+The **Hilux Revo Rally** has **Engine type**: **2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC**.
+SOURCES: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+--------------------------------------------------------------------------------
+ID: T015
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: specs for toyota veloz
+ANSWER:
+Great question! Here's a quick spec overview for the **Veloz**:
+
+**Price:** $35,900
+**Seats:** 7.0
+**Fuel:** Gasoline
+**Body type:** MVP
+**Transmission:** CVT
+**Engine:** 1.5 L, 4-cylinder gasoline, in-line, 16-valve DOHC Chain Drive with Dual VVT-i
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+ID: T016
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: what transmission does vios have
+ANSWER:
+The **Vios** has **Transmission type**: **CVT**.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T017
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: fuel type of toyota camry
+ANSWER:
+The **Vios** has **Fuel type**: **gasoline**.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T018
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: how many seats does fortuner have
+ANSWER:
+The **Fortuner Legender** has **Seats**: **7.0**.
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+ID: T019
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: engine capacity of toyota alphard
+ANSWER:
+The **Fortuner Legender** has **Displacement**: **2,755 cc**.
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+ID: T020
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: specifications of land cruiser
+ANSWER:
+Great question! Here's a quick spec overview for the **Land Cruiser ZX**:
+
+**Price:** $188,500
+**Seats:** 7.0
+**Fuel:** Diesel
+**Body type:** SUV
+**Transmission:** 10-speed automatic
+**Engine:** 3.3 L, V6 twin-turbo diesel, 24-valve DOHC
+SOURCES: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications
+--------------------------------------------------------------------------------
+ID: T021
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does yaris cross have apple carplay
+ANSWER:
+Yes. The **Yaris Cross HEV** includes **Apple CarPlay / Android Auto**.
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T022
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does toyota raize have 360 camera
+ANSWER:
+No. The **Raize** does not include **360° Panoramic View Monitor**.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+ID: T023
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does corolla cross support android auto
+ANSWER:
+Yes. The **COROLLA CROSS GASOLINE** includes **Apple CarPlay / Android Auto**.
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications
+--------------------------------------------------------------------------------
+ID: T024
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does hilux have cruise control
+ANSWER:
+Yes. The **Hilux Revo Rally** includes **Cruise control**.
+SOURCES: https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+--------------------------------------------------------------------------------
+ID: T025
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: airbags in toyota veloz
+ANSWER:
+The **Veloz** has **SRS airbags**: **6 (1 driver, 1 front passenger, 2 side, 2 curtain shield)**.
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+ID: T026
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does vios have keyless entry
+ANSWER:
+Yes. The **Vios** includes **Smart entry**.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T027
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does camry support apple carplay
+ANSWER:
+Yes. The **Vios** includes **Apple CarPlay / Android Auto**.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T028
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does fortuner have 360 camera
+ANSWER:
+Yes. The **Fortuner Legender** includes **360° Panoramic View Monitor**.
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+ID: T029
+OK: False
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: SYSTEM
+Q: does alphard have sunroof
+ANSWER:
+That feature is not available in the dataset yet.
+--------------------------------------------------------------------------------
+ID: T030
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: does land cruiser have lane assist
+ANSWER:
+Yes. The **Land Cruiser ZX** includes **Dynamic Radar Cruise Control Drcc**.
+SOURCES: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications
+--------------------------------------------------------------------------------
+ID: T031
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: compare veloz vs vios
+ANSWER:
+Here’s a quick comparison (official dataset): Veloz vs Vios
+- Price: $35,900 vs $33,900
+- Seats: 7.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: MVP vs Sedan
+- Transmission: CVT vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T032
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: compare corolla cross and yaris cross
+ANSWER:
+Here’s a quick comparison (official dataset): COROLLA CROSS GASOLINE vs Yaris Cross HEV
+- Price: $47,900 vs $43,500
+- Seats: 5.0 vs N/A
+- Fuel: gasoline vs hybrid
+- Body type: SUV vs SUV
+- Transmission: N/A vs CVT
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T033
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: raize vs yaris cross comparison
+ANSWER:
+Here’s a quick comparison (official dataset): Yaris Cross HEV vs Raize
+- Price: $43,500 vs $26,800
+- Seats: N/A vs 5.0
+- Fuel: hybrid vs gasoline
+- Body type: SUV vs SUV
+- Transmission: CVT vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color, https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+ID: T034
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: which is bigger fortuner or hilux
+ANSWER:
+Here’s a quick comparison (official dataset): Fortuner Legender vs Hilux Revo Rally
+- Price: $65,500 vs $50,600
+- Seats: 7.0 vs 5.0
+- Fuel: diesel vs diesel
+- Body type: SUV vs Pickup
+- Transmission: N/A vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications, https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications
+--------------------------------------------------------------------------------
+ID: T035
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: compare camry vs corolla cross
+ANSWER:
+I found **COROLLA CROSS GASOLINE** in our dataset, but couldn't identify the second model. It may not be available in Toyota Cambodia's current lineup. Try: compare Veloz vs Vios
+--------------------------------------------------------------------------------
+ID: T036
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: difference between raize and veloz
+ANSWER:
+Here’s a quick comparison (official dataset): Raize vs Veloz
+- Price: $26,800 vs $35,900
+- Seats: 5.0 vs 7.0
+- Fuel: gasoline vs gasoline
+- Body type: SUV vs MVP
+- Transmission: N/A vs CVT
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+ID: T037
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: compare land cruiser and fortuner
+ANSWER:
+Here’s a quick comparison (official dataset): Land Cruiser ZX vs Fortuner Legender
+- Price: $188,500 vs $65,500
+- Seats: 7.0 vs 7.0
+- Fuel: diesel vs diesel
+- Body type: SUV vs SUV
+- Transmission: N/A vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications, https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications
+--------------------------------------------------------------------------------
+ID: T038
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: yaris cross vs corolla cross specs
+ANSWER:
+Here’s a quick comparison (official dataset): COROLLA CROSS GASOLINE vs Yaris Cross HEV
+- Price: $47,900 vs $43,500
+- Seats: 5.0 vs N/A
+- Fuel: gasoline vs hybrid
+- Body type: SUV vs SUV
+- Transmission: N/A vs CVT
+SOURCES: https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T039
+OK: False
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: SYSTEM
+Q: alphard vs camry comparison
+ANSWER:
+Which two Toyota models do you want to compare? Example: compare Veloz vs Vios
+--------------------------------------------------------------------------------
+ID: T040
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: compare vios and raize
+ANSWER:
+Here’s a quick comparison (official dataset): Raize vs Vios
+- Price: $26,800 vs $33,900
+- Seats: 5.0 vs 5.0
+- Fuel: gasoline vs gasoline
+- Body type: SUV vs Sedan
+- Transmission: N/A vs N/A
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T041
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend suv under 30000
+ANSWER:
+What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+ID: T042
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend toyota car under 35000
+ANSWER:
+What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+ID: T043
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: suv under 40000 gasoline
+ANSWER:
+Here are some Toyota models that match your preferences:
+
+1. Raize
+   $26,800 | 5.0 seats | Gasoline | SUV
+2. YARIS CROSS GASOLINE
+   $37,500 | N/A seats | Gasoline | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications, https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications
+--------------------------------------------------------------------------------
+ID: T044
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: hybrid suv under 45000
+ANSWER:
+Here are some Toyota models that match your preferences:
+
+1. Yaris Cross HEV
+   $43,500 | N/A seats | Hybrid | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T045
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: family car 7 seats under 50000
+ANSWER:
+The **Raize** has **Seats**: **5.0**.
+SOURCES: https://www.toyota.com.kh/en/models/raize/raize.html#specifications
+--------------------------------------------------------------------------------
+ID: T046
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend pickup under 45000
+ANSWER:
+What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+ID: T047
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend sedan under 30000
+ANSWER:
+What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+ID: T048
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: best toyota suv under 35000
+ANSWER:
+What fuel do you prefer? (Gasoline / Diesel / Hybrid / EV)
+--------------------------------------------------------------------------------
+ID: T049
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend hybrid car under 40000
+ANSWER:
+I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+ID: T050
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend mpv under 45000
+ANSWER:
+I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+ID: T051
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: toyota car under 25000
+ANSWER:
+I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+ID: T052
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: cheapest suv toyota
+ANSWER:
+I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+ID: T053
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend 7 seat suv under 45000
+ANSWER:
+Here are some Toyota models that match your preferences:
+
+1. Yaris Cross HEV
+   $43,500 | N/A seats | Hybrid | SUV
+
+Reply with a listing number (1–10) or model name to see more details.
+
+(These may not fully meet your seat requirement.)
+SOURCES: https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color
+--------------------------------------------------------------------------------
+ID: T054
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: recommend gasoline sedan under 30000
+ANSWER:
+I couldn't find a perfect match with those filters. Try a slightly higher budget or a different body type / fuel.
+--------------------------------------------------------------------------------
+ID: T055
+OK: True
+EXPECTED_PIPELINE: CSV_METHOD
+ACTUAL_PIPELINE: CSV_METHOD
+Q: best toyota car under 50000
+ANSWER:
+Here are some Toyota models that match your preferences:
+
+1. Vios
+   $33,900 | 5.0 seats | Gasoline | Sedan
+
+Reply with a listing number (1–10) or model name to see more details.
+SOURCES: https://www.toyota.com.kh/en/models/vios/vios.html#specifications
+--------------------------------------------------------------------------------
+ID: T056
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: show preowned toyota fortuner
+ANSWER:
+I found **6 pre-owned listings**:
+
+Overview: Price $51,900–$67,200 | Year 2022–2025 | Mileage 3,826–113,705 km
+
+1. Fortuner Modelista PP (2025)
+   Price: $67,200 | Plate: PP-2CD-5472 | Mileage: 3,826 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+2. Fortuner Legender CAM (2025)
+   Price: $63,300 | Plate: RY-M-520 | Mileage: 4,233 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+3. Fortuner Legender PP (2023)
+   Price: $57,900 | Plate: PP-2BT-1571 | Mileage: 43,508 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+4. Fortuner Legender PP (2022)
+   Price: $55,900 | Plate: PP-2BQ-9255 | Mileage: 89,771 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+5. Fortuner Legender CAM (2022)
+   Price: $54,900 | Plate: CAM-AYA-6336 | Mileage: 94,770 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+6. Fortuner Legender PP (2022)
+   Price: $51,900 | Plate: PP-2BQ-6886 | Mileage: 113,705 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BT-1571.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html
+--------------------------------------------------------------------------------
+ID: T057
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota suv under 40000
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $23,300–$36,900 | Year 2020–2025 | Mileage 4,310–75,676 km
+
+1. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+4. Toyota Corolla Cross PP 2BV (2023)
+   Price: $36,900 | Plate: PP-2BV-7221 | Mileage: 25,985 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+5. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BT-9148 | Mileage: 26,142 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+6. Toyota Corolla Cross PP 2BS (2023)
+   Price: $36,300 | Plate: PP-2BS-5711 | Mileage: 39,640 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+7. Toyota Corolla Cross PP 2BQ (2022)
+   Price: $34,900 | Plate: PP-2BQ-1429 | Mileage: 64,126 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+8. Toyota Corolla Cross PP 2BP (2022)
+   Price: $34,900 | Plate: PP-2BP-7744 | Mileage: 75,676 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+9. Toyota Corolla Cross PP 2BO (2021)
+   Price: $31,900 | Plate: PP-2BO-3110 | Mileage: 49,807 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+10. Toyota Rush PP (2020)
+   Price: $23,900 | Plate: RUSH-PP-2BH | Mileage: 67,795 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BH-7736.html
+--------------------------------------------------------------------------------
+ID: T058
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: pre owned toyota raize
+ANSWER:
+I found **2 pre-owned listings**:
+
+Overview: Price $23,300–$23,300 | Year 2023–2023 | Mileage 24,589–26,142 km
+
+1. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BT-9148 | Mileage: 26,142 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html
+--------------------------------------------------------------------------------
+ID: T059
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota car under 30000
+ANSWER:
+I found **5 pre-owned listings**:
+
+Overview: Price $23,300–$24,900 | Year 2020–2023 | Mileage 24,589–91,191 km
+
+1. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BT-9148 | Mileage: 26,142 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Rush PP (2020)
+   Price: $23,900 | Plate: RUSH-PP-2BH | Mileage: 67,795 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+4. Toyota Rush PP (2020)
+   Price: $24,500 | Plate: RUSH-PP-2BC | Mileage: 78,231 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+5. Toyota Rush TRD PP (2020)
+   Price: $24,900 | Plate: RUSH-TRD-PP | Mileage: 91,191 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BH-7736.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BC-9704.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-TRD-PP-2BI-2418.html
+--------------------------------------------------------------------------------
+ID: T060
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: preowned toyota hilux
+ANSWER:
+Sorry, I couldn't find any pre-owned listings matching your request.
+Try:
+- model name (e.g. Fortuner Legender preowned)
+- filter (e.g. pre-owned SUV under $35000 gasoline)
+- plate number (e.g. PP-2CB-7465)
+--------------------------------------------------------------------------------
+ID: T061
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota pickup under 35000
+ANSWER:
+Sorry, I couldn't find any pre-owned listings matching your request.
+Try:
+- model name (e.g. Fortuner Legender preowned)
+- filter (e.g. pre-owned SUV under $35000 gasoline)
+- plate number (e.g. PP-2CB-7465)
+--------------------------------------------------------------------------------
+ID: T062
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota corolla cross
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $31,900–$44,900 | Year 2021–2025 | Mileage 2,560–75,676 km
+
+1. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Corolla Cross Hybrid PP 2CI (2024)
+   Price: $44,900 | Plate: PP-2CI-0199 | Mileage: 2,560 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+4. Toyota Corolla Cross PP 2BY (2024)
+   Price: $43,300 | Plate: PP-2BY-0075 | Mileage: 8,175 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+5. Toyota Corolla Cross PP 2CB (2024)
+   Price: $42,900 | Plate: PP-2CB-1838 | Mileage: 27,655 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+6. Toyota Corolla Cross PP 2BV (2023)
+   Price: $36,900 | Plate: PP-2BV-7221 | Mileage: 25,985 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+7. Toyota Corolla Cross PP 2BS (2023)
+   Price: $36,300 | Plate: PP-2BS-5711 | Mileage: 39,640 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+8. Toyota Corolla Cross PP 2BQ (2022)
+   Price: $34,900 | Plate: PP-2BQ-1429 | Mileage: 64,126 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+9. Toyota Corolla Cross PP 2BP (2022)
+   Price: $34,900 | Plate: PP-2BP-7744 | Mileage: 75,676 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+10. Toyota Corolla Cross PP 2BO (2021)
+   Price: $31,900 | Plate: PP-2BO-3110 | Mileage: 49,807 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html
+--------------------------------------------------------------------------------
+ID: T063
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: show pre owned suv under 45000
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $23,300–$44,900 | Year 2022–2025 | Mileage 2,560–64,126 km
+
+1. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Corolla Cross Hybrid PP 2CI (2024)
+   Price: $44,900 | Plate: PP-2CI-0199 | Mileage: 2,560 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+4. Toyota Corolla Cross PP 2BY (2024)
+   Price: $43,300 | Plate: PP-2BY-0075 | Mileage: 8,175 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+5. Toyota Corolla Cross PP 2CB (2024)
+   Price: $42,900 | Plate: PP-2CB-1838 | Mileage: 27,655 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+6. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+7. Toyota Corolla Cross PP 2BV (2023)
+   Price: $36,900 | Plate: PP-2BV-7221 | Mileage: 25,985 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+8. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BT-9148 | Mileage: 26,142 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+9. Toyota Corolla Cross PP 2BS (2023)
+   Price: $36,300 | Plate: PP-2BS-5711 | Mileage: 39,640 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+10. Toyota Corolla Cross PP 2BQ (2022)
+   Price: $34,900 | Plate: PP-2BQ-1429 | Mileage: 64,126 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html
+--------------------------------------------------------------------------------
+ID: T064
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota yaris cross
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $31,900–$44,900 | Year 2021–2025 | Mileage 2,560–75,676 km
+
+1. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Corolla Cross Hybrid PP 2CI (2024)
+   Price: $44,900 | Plate: PP-2CI-0199 | Mileage: 2,560 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+4. Toyota Corolla Cross PP 2BY (2024)
+   Price: $43,300 | Plate: PP-2BY-0075 | Mileage: 8,175 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+5. Toyota Corolla Cross PP 2CB (2024)
+   Price: $42,900 | Plate: PP-2CB-1838 | Mileage: 27,655 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+6. Toyota Corolla Cross PP 2BV (2023)
+   Price: $36,900 | Plate: PP-2BV-7221 | Mileage: 25,985 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+7. Toyota Corolla Cross PP 2BS (2023)
+   Price: $36,300 | Plate: PP-2BS-5711 | Mileage: 39,640 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+8. Toyota Corolla Cross PP 2BQ (2022)
+   Price: $34,900 | Plate: PP-2BQ-1429 | Mileage: 64,126 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+9. Toyota Corolla Cross PP 2BP (2022)
+   Price: $34,900 | Plate: PP-2BP-7744 | Mileage: 75,676 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+10. Toyota Corolla Cross PP 2BO (2021)
+   Price: $31,900 | Plate: PP-2BO-3110 | Mileage: 49,807 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2CB-1838.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BS-5711.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BQ-1429.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BP-7744.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BO-3110.html
+--------------------------------------------------------------------------------
+ID: T065
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota car under 25000
+ANSWER:
+I found **5 pre-owned listings**:
+
+Overview: Price $23,300–$24,900 | Year 2020–2023 | Mileage 24,589–91,191 km
+
+1. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BT-9148 | Mileage: 26,142 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+3. Toyota Rush PP (2020)
+   Price: $23,900 | Plate: RUSH-PP-2BH | Mileage: 67,795 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+4. Toyota Rush PP (2020)
+   Price: $24,500 | Plate: RUSH-PP-2BC | Mileage: 78,231 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+5. Toyota Rush TRD PP (2020)
+   Price: $24,900 | Plate: RUSH-TRD-PP | Mileage: 91,191 km
+   Fuel: gasoline | Transmission: 4-speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BT-9148.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BH-7736.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-PP-2BC-9704.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Rush-TRD-PP-2BI-2418.html
+--------------------------------------------------------------------------------
+ID: T066
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: preowned toyota fortuner 2022
+ANSWER:
+I found **3 pre-owned listings**:
+
+Overview: Price $51,900–$55,900 | Year 2022–2022 | Mileage 89,771–113,705 km
+
+1. Fortuner Legender PP (2022)
+   Price: $55,900 | Plate: PP-2BQ-9255 | Mileage: 89,771 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+2. Fortuner Legender CAM (2022)
+   Price: $54,900 | Plate: CAM-AYA-6336 | Mileage: 94,770 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+3. Fortuner Legender PP (2022)
+   Price: $51,900 | Plate: PP-2BQ-6886 | Mileage: 113,705 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-9255.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-AYA-6336.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html
+--------------------------------------------------------------------------------
+ID: T067
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota raize 2021
+ANSWER:
+Sorry, I couldn't find any pre-owned listings matching your request.
+Try:
+- model name (e.g. Fortuner Legender preowned)
+- filter (e.g. pre-owned SUV under $35000 gasoline)
+- plate number (e.g. PP-2CB-7465)
+--------------------------------------------------------------------------------
+ID: T068
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: toyota certified used car under 40000
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $23,300–$36,900 | Year 2023–2025 | Mileage 4,310–30,832 km
+
+1. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+2. Toyota Veloz PP (2025)
+   Price: $32,900 | Plate: PP-2CB-7465 | Mileage: 7,791 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+3. Toyota Veloz PP (2025)
+   Price: $33,300 | Plate: PP-2CD-1304 | Mileage: 8,324 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+4. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+5. Toyota Veloz PP (2025)
+   Price: $33,200 | Plate: PP-2CB-8620 | Mileage: 13,435 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+6. Toyota Veloz PP (2024)
+   Price: $30,900 | Plate: PP-2BY-0425 | Mileage: 15,512 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+7. Toyota Veloz PP (2024)
+   Price: $31,500 | Plate: PP-2CB-2641 | Mileage: 26,756 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+8. Toyota Veloz PP (2024)
+   Price: $31,500 | Plate: PP-2CA-2237 | Mileage: 30,832 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+9. Toyota Raize PP (2023)
+   Price: $23,300 | Plate: PP-2BX-0611 | Mileage: 24,589 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+10. Toyota Corolla Cross PP 2BV (2023)
+   Price: $36,900 | Plate: PP-2BV-7221 | Mileage: 25,985 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-2641.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CA-2237.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Raize-PP-2BX-0611.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BV-7221.html
+--------------------------------------------------------------------------------
+ID: T069
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: pre owned toyota camry
+ANSWER:
+I found **10 pre-owned listings**:
+
+Overview: Price $30,900–$67,200 | Year 2024–2025 | Mileage 2,560–15,512 km
+
+1. Fortuner Modelista PP (2025)
+   Price: $67,200 | Plate: PP-2CD-5472 | Mileage: 3,826 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+2. Fortuner Legender CAM (2025)
+   Price: $63,300 | Plate: RY-M-520 | Mileage: 4,233 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: SUV
+
+3. Toyota Yaris Cross PP (2025)
+   Price: $34,900 | Plate: PP-2CD-0284 | Mileage: 4,310 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+4. Toyota Veloz PP (2025)
+   Price: $32,900 | Plate: PP-2CB-7465 | Mileage: 7,791 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+5. Toyota Veloz PP (2025)
+   Price: $33,300 | Plate: PP-2CD-1304 | Mileage: 8,324 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+6. Toyota Yaris Cross PP (2025)
+   Price: $34,500 | Plate: PP-2CA-0914 | Mileage: 11,515 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+7. Toyota Veloz PP (2025)
+   Price: $33,200 | Plate: PP-2CB-8620 | Mileage: 13,435 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+8. Toyota Corolla Cross Hybrid PP 2CI (2024)
+   Price: $44,900 | Plate: PP-2CI-0199 | Mileage: 2,560 km
+   Fuel: gasoline | Transmission: 7-speed CVT | Body: SUV
+
+9. Toyota Corolla Cross PP 2BY (2024)
+   Price: $43,300 | Plate: PP-2BY-0075 | Mileage: 8,175 km
+   Fuel: gasoline | Transmission: 7-Speed Automatic | Body: SUV
+
+10. Toyota Veloz PP (2024)
+   Price: $30,900 | Plate: PP-2BY-0425 | Mileage: 15,512 km
+   Fuel: gasoline | Transmission: 6-speed Automatic | Body: MPV
+
+Reply with a listing number (1–10) or plate number to see more details.
+SOURCES: https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Modelista-PP-2CD-5472.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-CAM-RY-M-520.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CD-0284.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-7465.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CD-1304.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Yaris-Cross-PP-2CA-0914.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2CB-8620.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-Hybrid-PP-2CI-0199.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Corolla-Cross-PP-2BY-0075.html, https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html
+--------------------------------------------------------------------------------
+ID: T070
+OK: True
+EXPECTED_PIPELINE: PREOWNED_RAG
+ACTUAL_PIPELINE: PREOWNED_RAG
+Q: used toyota vios
+ANSWER:
+Sorry, I couldn't find any pre-owned listings matching your request.
+Try:
+- model name (e.g. Fortuner Legender preowned)
+- filter (e.g. pre-owned SUV under $35000 gasoline)
+- plate number (e.g. PP-2CB-7465)
+--------------------------------------------------------------------------------
+ID: T071
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: what is toyota warranty in cambodia
+ANSWER:
+Toyota Cambodia offers a standard manufacturer's warranty on all new vehicles. For full warranty details including duration and coverage, please visit https://www.toyota.com.kh or contact your nearest Toyota Cambodia showroom.
+--------------------------------------------------------------------------------
+ID: T072
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: how long is toyota warranty
+ANSWER:
+Toyota Cambodia offers a standard manufacturer's warranty on all new vehicles. For full warranty details including duration and coverage, please visit https://www.toyota.com.kh or contact your nearest Toyota Cambodia showroom.
+--------------------------------------------------------------------------------
+ID: T073
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: toyota maintenance schedule
+ANSWER:
+Toyota Cambodia provides official service and maintenance packages for all Toyota models. For service schedules, packages, and booking, please visit https://www.toyota.com.kh or call your nearest service center.
+--------------------------------------------------------------------------------
+ID: T074
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: toyota servicing packages
+ANSWER:
+Toyota Cambodia provides official service and maintenance packages for all Toyota models. For service schedules, packages, and booking, please visit https://www.toyota.com.kh or call your nearest service center.
+--------------------------------------------------------------------------------
+ID: T075
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: what services does toyota cambodia provide
+ANSWER:
+Toyota Cambodia provides official service and maintenance packages for all Toyota models. For service schedules, packages, and booking, please visit https://www.toyota.com.kh or call your nearest service center.
+--------------------------------------------------------------------------------
+ID: T076
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: what is toyota certified pre owned program
+ANSWER:
+That's a great question, but unfortunately I don't have that information in our dataset. Feel free to ask about price, specs, features, comparisons, recommendations, or pre-owned listings.
+--------------------------------------------------------------------------------
+ID: T077
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: how often should toyota cars be serviced
+ANSWER:
+Toyota Cambodia provides official service and maintenance packages for all Toyota models. For service schedules, packages, and booking, please visit https://www.toyota.com.kh or call your nearest service center.
+--------------------------------------------------------------------------------
+ID: T078
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: what is included in toyota warranty
+ANSWER:
+Toyota Cambodia offers a standard manufacturer's warranty on all new vehicles. For full warranty details including duration and coverage, please visit https://www.toyota.com.kh or contact your nearest Toyota Cambodia showroom.
+--------------------------------------------------------------------------------
+ID: T079
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: toyota service center information
+ANSWER:
+Toyota Cambodia provides official service and maintenance packages for all Toyota models. For service schedules, packages, and booking, please visit https://www.toyota.com.kh or call your nearest service center.
+--------------------------------------------------------------------------------
+ID: T080
+OK: True
+EXPECTED_PIPELINE: RAG
+ACTUAL_PIPELINE: RAG
+Q: benefits of toyota warranty
+ANSWER:
+Toyota Cambodia offers a standard manufacturer's warranty on all new vehicles. For full warranty details including duration and coverage, please visit https://www.toyota.com.kh or contact your nearest Toyota Cambodia showroom.
+--------------------------------------------------------------------------------

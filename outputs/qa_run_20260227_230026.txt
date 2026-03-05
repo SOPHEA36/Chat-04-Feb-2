@@ -1,0 +1,219 @@
+PROJECT_ROOT: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2
+OFFICIAL_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data/csv/vehicle_master.csv
+PREOWNED_DATASET: /Users/sophea/My Document/RUPP_MITE/My Thesis Project/Final Project/Development/04-02 Chatbot/Chat-04-Feb 2/data_preowned/csv_preowned/preowned_master.csv
+TOTAL_QUESTIONS: 52
+
+Q01: hello
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q02: thanks
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q03: /reset
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q04: price of yaris cross gasoline
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q05: how much is fortuner legender
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q06: starting price of raize
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q07: specs of fortuner legender
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q08: show specs for veloz
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q09: specs?
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q10: summary of raize
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q11: give me summary for corolla cross hev
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q12: summary?
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q13: does corolla cross have 360 camera
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q14: does yaris cross have apple carplay
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q15: what is the transmission of veloz
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q16: what is the fuel type of land cruiser 250 diesel
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q17: what is the seat number of hiace 16 seater
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q18: price of it
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q19: what about specs
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q20: does it have 360 camera
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q21: compare veloz vs vios
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q22: vios vs raize
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q23: compare
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q24: recommend suv
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q25: i want to buy a new car
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q26: recommend SUV under $45000 gasoline
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q27: budget 40000 fuel gasoline body suv
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q28: budget 35000 body sedan fuel gasoline
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q29: budget 60000 body suv fuel diesel min seats 7
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q30: recommend pickup
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q31: budget 50000
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q32: diesel
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q33: pickup
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q34: recommend suv under 45000 gasoline
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q35: both
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q36: Fortuner Legender preowned price year mileage
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q37: Veloz preowned price
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q38: Yaris Cross used price
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q39: pre-owned corolla cross hybrid year mileage
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q40: show me listings for raize preowned
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q41: preowned plate number fortuner
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q42: certified pre-owned veloz 2024 mileage
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q43: preowned yaris cross
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q44: used fortuner legender
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q45: mileage of preowned veloz
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q46: does raize have sunroof panoramic and ventilated seat
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q47: what is the 0-100 acceleration of vios
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q48: tell me the best car in cambodia overall
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q49: 1) price of yaris cross
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q50: "specs of    fortuner    legender  "
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q51: (summary of raize)
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+Q52: compare    veloz   versus   vios
+PIPELINE: error
+ERROR: TypeError: chat_turn() got an unexpected keyword argument 'preowned'
+--------------------------------------------------------------------------------
+
+SUMMARY
+OK: 0
+FAIL: 52
+PIPELINES:
+- error: 52

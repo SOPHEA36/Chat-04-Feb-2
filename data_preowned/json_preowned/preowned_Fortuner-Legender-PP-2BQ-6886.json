@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Fortuner Legender PP",
+  "price": "US$51,900",
+  "details": {
+    "model_year": "2022",
+    "mileage": "113,705 Km",
+    "body_colour": "Silver",
+    "body_type": "SUV",
+    "engine": "2.8 L",
+    "transmission": "6-speed Automatic",
+    "fuel_type": "Diesel"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Fortuner-Legender-PP-2BQ-6886.html"
+}

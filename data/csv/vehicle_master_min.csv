@@ -1,0 +1,18 @@
+brand,model,price_usd,seats,body_type,fuel,url,source_file
+Toyota,COROLLA CROSS GASOLINE,47900,5,SUV,gasoline,https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric-old.html#specifications,corolla-cross-gasoline.json
+Toyota,Corolla Cross HEV,49900,5,SUV,hybrid,https://www.toyota.com.kh/en/models/corolla-cross/corolla-cross-hybrid-electric.html,corolla-cross-hybrid-electric.json
+Toyota,Fortuner Legender,65500,7,SUV,diesel,https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications,fortuner-legender.json
+Toyota,Hiace 12-seater,39900,12,BUS,diesel,https://www.toyota.com.kh/en/models/hiace/hiace-12-seater.html#specifications,hiace-12-seater.json
+Toyota,Hiace 16-seater,49900,16,Bus,diesel,https://www.toyota.com.kh/en/models/hiace/hiace-16-seater.html#specifications,hiace-16-seater.json
+Toyota,Hilux Revo Rally,50600,5,Pickup,diesel,https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-rally.html#specifications,hilux-revo-rally.json
+Toyota,Hilux Revo V-Edition,40900,5,Pickup,diesel,https://www.toyota.com.kh/en/models/hilux-revo/hilux-revo-v-edition.html#specifications,hilux-revo-v-edition.json
+Toyota,Land Cruiser 250 Diesel,155000,7,SUV,diesel,https://www.toyota.com.kh/en/models/land-cruiser-250/land-cruiser-250-diesel.html#specifications,land-cruiser-250-diesel.json
+Toyota,Land Cruiser 250 Gasoline,150000,7,SUV,gasoline,https://www.toyota.com.kh/en/models/land-cruiser-250/land-cruiser-250-gasoline.html#specifications,land-cruiser-250-gasoline.json
+Toyota,LAND CRUISER GR-S,198300,7,SUV,gasoline,https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-gr-s.html#specifications,land-cruiser-gr-s.json
+Toyota,Land Cruiser ZX,188500,7,SUV,diesel,https://www.toyota.com.kh/en/models/land-cruiser/land-cruiser-zx.html#specifications,land-cruiser-zx.json
+Toyota,Raize,26800,5,SUV,gasoline,https://www.toyota.com.kh/en/models/raize/raize.html#specifications,raize.json
+Toyota,Veloz,35900,7,MVP,gasoline,https://www.toyota.com.kh/en/models/veloz/veloz-manual-transmission.html#specifications,veloz.json
+Toyota,Vios,33900,5,Sedan,gasoline,https://www.toyota.com.kh/en/models/vios/vios.html#specifications,vios.json
+Toyota,Wigo,19900,,Hatchback,gasoline,https://www.toyota.com.kh/en/models/wigo/wigo.html#specifications,wigo.json
+Toyota,Yaris Cross HEV,43500,,SUV,hybrid,https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-hybrid-electric.html#color,yaris-cross-hybrid-electric.json
+Toyota,YARIS CROSS GASOLINE,37500,,SUV,gasoline,https://www.toyota.com.kh/en/models/yaris-cross/yaris-cross-manual-transmission.html#specifications,yaris-cross-manual-transmission.json

@@ -1,0 +1,63 @@
+Model: Toyota Fortuner Legender
+Price (USD): 65500
+Body type: SUV
+Seating capacity: 7
+Fuel: diesel
+
+Specifications:
+- Antilock Braking System Abs: Included
+- Antitheft System: Immobilizer & horn
+- Apple Carplay And Android Auto: Included
+- Audio System: 9-inch touchscreen display, Bluetooth, 10 JBL speakers with 1 subwoofer
+- Blind Spot Monitor Bsm: Included
+- Body Type: SUV
+- Charging Ports: USB (x1), 12V (x2), wireless (x1)
+- Child Locks: Rear doors
+- Child Restraint System: ISOFIX (x2), tether anchor (x2)
+- Cruise Control: Included
+- Daytime Running Lights: Included
+- Displacement: 2,755 cc
+- Drive Type: 4WD
+- Emergency Stop Signal: Included
+- Engine Type: 2.8 L, 4-cylinder diesel, in-line, 16-valve DOHC
+- Fog Lamps: LED
+- Front: 1,545 mm
+- Front Row: 3-point Emergency Locking Retractor (ELR) with pretensioner and force limiter (x2)
+- Fuel Tank Capacity: 80 L
+- Gross Vehicle Weight: 2,740 kg
+- Ground Clearance: 279 mm
+- Headup Display Hud: Not available
+- Hillstart Assist Control: Included
+- Ignition: Push start
+- Kerb Weight: 2,180 kg
+- Length   Width   Height: 4,795 / 1,855 / 1,835 mm
+- Leveling: Automatic
+- Maximum Output: 201 HP (150 kW) @ 3,400 RPM
+- Maximum Torque: 500 Nm @ 1,600 - 2,800 RPM
+- Minimum Turning Radius Tire: 5.8 m
+- Multiinformation Display Mid: 4.2-inch TFT
+- Panoramic View Monitor Pvm: Included
+- Parking Sensors: Front (x2), rear (x4)
+- Rear: 1,555 mm
+- Reverse Camera: Included
+- Safety Rating: 5 stars
+- Seating Capacity: 7
+- Second Row: 3-point ELR (x3)
+- Side View Mirrors: Power adjustable, retractable, turn signal, welcome light
+- Smart Entry: Included
+- Spare Tire  Rim: Ground tire, alloy wheel
+- Srs Airbags: 7 (1 driver, 1 driver's knee, 1 front passenger, 2 side, 2 curtain shield)
+- Steering Column: Manual tilt & telescopic with electric lock
+- Steering Type: Variable Flow Control (VFC) power steering
+- Steering Wheel Controls: Audio, telephone, voice recognition, MID, Adaptive Cruise Control, Lane Departure Alert
+- Third Row: 3-point ELR (x2)
+- Tire  Disc Wheels: 265/60 R18 aluminum
+- Tire Pressure Warning System Tpws: Not available
+- Transmission Type: 6-speed automatic
+- Type: Bi-beam LED
+- Vehicle Stability Control Vsc: Included
+- Wheelbase: 2,745 mm
+- Windshield Wipers: Intermittent, time adjustable, mist
+- Wireless Charging: Included
+
+Source: https://www.toyota.com.kh/en/models/fortuner/fortuner-legender.html#specifications

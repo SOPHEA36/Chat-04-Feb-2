@@ -1,0 +1,16 @@
+{
+  "type": "preowned",
+  "brand": "Toyota",
+  "model": "Toyota Veloz PP",
+  "price": "US$30,900",
+  "details": {
+    "model_year": "2024",
+    "mileage": "15,512 Km",
+    "body_colour": "Black",
+    "body_type": "MPV",
+    "engine": "1.5 L",
+    "transmission": "6-speed Automatic",
+    "fuel_type": "Gasoline"
+  },
+  "source_url": "https://www.toyota.com.kh/en/toyota-certified-pre-owned/models/Toyota-Veloz-PP-2BY-0425.html"
+}
