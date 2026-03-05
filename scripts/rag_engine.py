@@ -1080,7 +1080,7 @@ class VehicleRAGEngine:
             msg = "Please specify which model you mean (example: spec of Yaris Cross)."
             return {"answer_type": "rag", "text": msg, "facts": [msg], "sources": [], "evidence": []}
 
-        docs, metas = self._hybrid_retrieve(self.collection, question, target, self.top_k_final)
+        docs, metas = self._hybrid_retrieve(question, target, self.top_k_final)
         if not docs:
             msg = "I do not have enough information in the knowledge base to answer that."
             return {"answer_type": "rag", "text": msg, "facts": [msg], "sources": [], "evidence": []}
