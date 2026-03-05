@@ -138,6 +138,7 @@
 #         return {"answer_type": "rag", "text": ans, "facts": [ans], "sources": sources}
 #
 # 5th-March-26
+
 # scripts/services_rag_engine.py
 from __future__ import annotations
 
@@ -471,7 +472,6 @@ class ServicesRAGEngine:
             "sources": sources,
             "evidence": evidence,
         }
-
 
 
 

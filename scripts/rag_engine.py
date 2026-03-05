@@ -716,18 +716,19 @@
 #         }
 #
 # 5th-March-26
-
 # scripts/rag_engine.py
 from __future__ import annotations
 
 import math
+import os
 import re
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-import requests
 import chromadb
+import requests
 from chromadb.config import Settings
 
 
@@ -735,10 +736,14 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DB_DIR = PROJECT_ROOT / "vector_db" / "chroma"
 COLLECTION_NAME = "vehicle_specs"
 
-TOP_K_VECTOR = 8
-TOP_K_KEYWORD = 12
-TOP_K_FINAL = 6
-RRF_K = 60
+TOP_K_VECTOR = int(os.getenv("RAG_TOP_K_VECTOR", "6"))
+TOP_K_KEYWORD = int(os.getenv("RAG_TOP_K_KEYWORD", "10"))
+TOP_K_FINAL = int(os.getenv("RAG_TOP_K_FINAL", "4"))
+RRF_K = int(os.getenv("RAG_RRF_K", "60"))
+
+OLLAMA_TIMEOUT = int(os.getenv("RAG_OLLAMA_TIMEOUT", "60"))
+OLLAMA_NUM_PREDICT = int(os.getenv("RAG_NUM_PREDICT", "180"))
+OLLAMA_NUM_CTX = int(os.getenv("RAG_NUM_CTX", "1536"))
 
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
 
@@ -758,7 +763,8 @@ def compact(s: str) -> str:
 
 
 def tokenize(text: str) -> List[str]:
-    return _TOKEN_RE.findall((text or "").lower())
+    tks = _TOKEN_RE.findall((text or "").lower())
+    return [t for t in tks if t and t not in STOPWORDS]
 
 
 class BM25Index:
@@ -771,7 +777,7 @@ class BM25Index:
         self.avgdl = (sum(self.doc_len) / len(self.doc_len)) if self.doc_len else 0.0
 
         self.df = Counter()
-        self.tf = []
+        self.tf: List[Counter] = []
         for tks in self.tokens:
             c = Counter(tks)
             self.tf.append(c)
@@ -786,14 +792,18 @@ class BM25Index:
 
     def score(self, query: str) -> List[float]:
         q_terms = tokenize(query)
+        if not q_terms or self.N == 0:
+            return [0.0] * self.N
+
         scores = [0.0] * self.N
 
         for i in range(self.N):
             dl = self.doc_len[i] if self.doc_len else 0
             denom_norm = self.k1 * (1 - self.b + self.b * (dl / self.avgdl)) if self.avgdl > 0 else self.k1
 
+            tf_i = self.tf[i]
             for term in q_terms:
-                freq = self.tf[i].get(term, 0)
+                freq = tf_i.get(term, 0)
                 if freq == 0:
                     continue
                 idf = self.idf(term)
@@ -833,32 +843,28 @@ def vector_retrieve(collection, query: str, target: Dict[str, Any], top_k: int) 
     return out
 
 
-def get_all_docs_for_model(collection, target: Dict[str, Any]) -> List[Dict[str, Any]]:
-    got = collection.get(
-        where=chroma_where_brand_model(target["brand"], target["model"]),
-        include=["documents", "metadatas"],
-    )
-    docs = got.get("documents") or []
-    metas = got.get("metadatas") or []
-    n = min(len(docs), len(metas))
-    return [{"doc": docs[i], "meta": metas[i]} for i in range(n)]
-
-
-def keyword_retrieve(docs_with_meta: List[Dict[str, Any]], query: str, top_k: int) -> List[Dict[str, Any]]:
-    docs = [d["doc"] for d in docs_with_meta]
-    if not docs:
+def keyword_retrieve_cached(
+    docs_with_meta: List[Dict[str, Any]],
+    bm25: BM25Index,
+    query: str,
+    top_k: int,
+) -> List[Dict[str, Any]]:
+    if not docs_with_meta:
         return []
-    bm25 = BM25Index(docs)
     scores = bm25.score(query)
     idxs = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_k]
-    return [{"doc": docs_with_meta[i]["doc"], "meta": docs_with_meta[i]["meta"], "bm25": scores[i]} for i in idxs]
+    return [
+        {"doc": docs_with_meta[i]["doc"], "meta": docs_with_meta[i]["meta"], "bm25": scores[i]}
+        for i in idxs
+    ]
 
 
 def rrf_fuse(vec_items: List[Dict[str, Any]], kw_items: List[Dict[str, Any]], top_k: int, k: int = 60) -> List[Dict[str, Any]]:
     def key_of(item: Dict[str, Any]) -> str:
         meta = item.get("meta") or {}
         url = str(meta.get("url") or "") if isinstance(meta, dict) else ""
-        return f"{item.get('doc','')}||{url}"
+        title = str(meta.get("title") or "") if isinstance(meta, dict) else ""
+        return f"{title}||{url}||{item.get('doc','')}"
 
     score_map = defaultdict(float)
     item_map: Dict[str, Dict[str, Any]] = {}
@@ -876,17 +882,6 @@ def rrf_fuse(vec_items: List[Dict[str, Any]], kw_items: List[Dict[str, Any]], to
 
     fused = sorted(score_map.items(), key=lambda x: x[1], reverse=True)[:top_k]
     return [item_map[kv[0]] for kv in fused]
-
-
-def hybrid_retrieve(collection, query: str, target: Dict[str, Any], top_k_final: int) -> Tuple[List[str], List[Dict[str, Any]]]:
-    vec = vector_retrieve(collection, query, target, TOP_K_VECTOR)
-    all_docs = get_all_docs_for_model(collection, target)
-    kw = keyword_retrieve(all_docs, query, TOP_K_KEYWORD)
-    fused = rrf_fuse(vec, kw, top_k_final, k=RRF_K)
-
-    docs = [x["doc"] for x in fused]
-    metas = [x.get("meta") or {} for x in fused]
-    return docs, metas
 
 
 def find_model_global(full_rows: List[Dict[str, Any]], text: str) -> List[Dict[str, Any]]:
@@ -921,6 +916,12 @@ def best_model_guess(full_rows: List[Dict[str, Any]], text: str) -> Optional[Dic
     return best if best_score >= 2 else None
 
 
+@dataclass
+class _ModelCache:
+    docs_with_meta: List[Dict[str, Any]]
+    bm25: BM25Index
+
+
 class VehicleRAGEngine:
     available = True
 
@@ -930,12 +931,55 @@ class VehicleRAGEngine:
         llm_model: str = "llama3",
         ollama_url: str = "http://localhost:11434/api/generate",
         top_k_final: int = TOP_K_FINAL,
+        warm_cache: bool = False,
     ):
         self.full_rows = full_rows
         self.collection = connect_chroma()
         self.llm_model = llm_model
         self.ollama_url = ollama_url
         self.top_k_final = int(top_k_final)
+
+        self._cache: Dict[str, _ModelCache] = {}
+
+        if warm_cache:
+            self._warm_all_models()
+
+    def _model_cache_key(self, target: Dict[str, Any]) -> str:
+        return f"{normalize_ws(str(target.get('brand') or ''))}||{normalize_ws(str(target.get('model') or ''))}"
+
+    def _load_model_cache(self, target: Dict[str, Any]) -> _ModelCache:
+        key = self._model_cache_key(target)
+        cached = self._cache.get(key)
+        if cached:
+            return cached
+
+        got = self.collection.get(
+            where=chroma_where_brand_model(target["brand"], target["model"]),
+            include=["documents", "metadatas"],
+        )
+        docs = got.get("documents") or []
+        metas = got.get("metadatas") or []
+        n = min(len(docs), len(metas))
+
+        docs_with_meta = [{"doc": docs[i], "meta": metas[i]} for i in range(n)]
+        bm25 = BM25Index([d["doc"] for d in docs_with_meta])
+
+        cached = _ModelCache(docs_with_meta=docs_with_meta, bm25=bm25)
+        self._cache[key] = cached
+        return cached
+
+    def _warm_all_models(self) -> None:
+        seen = set()
+        for r in self.full_rows:
+            b = str(r.get("brand") or "").strip()
+            m = str(r.get("model") or "").strip()
+            if not b or not m:
+                continue
+            k = f"{normalize_ws(b)}||{normalize_ws(m)}"
+            if k in seen:
+                continue
+            seen.add(k)
+            self._load_model_cache({"brand": b, "model": m})
 
     def resolve_target(self, question: str, last_model_norm: Optional[str]) -> Optional[Dict[str, Any]]:
         if last_model_norm:
@@ -953,8 +997,19 @@ class VehicleRAGEngine:
         try:
             r = requests.post(
                 self.ollama_url,
-                json={"model": self.llm_model, "prompt": prompt, "stream": False},
-                timeout=120,
+                json={
+                    "model": self.llm_model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {
+                        "temperature": 0.2,
+                        "top_p": 0.9,
+                        "num_predict": OLLAMA_NUM_PREDICT,
+                        "num_ctx": OLLAMA_NUM_CTX,
+                    },
+                    "keep_alive": "10m",
+                },
+                timeout=OLLAMA_TIMEOUT,
             )
             data = r.json()
             return str(data.get("response", "")).strip()
@@ -966,21 +1021,30 @@ class VehicleRAGEngine:
         blocks: List[str] = []
         for i, d in enumerate(docs):
             m = metas[i] if i < len(metas) else {}
+            url = str((m or {}).get("url") or "")
+            title = str((m or {}).get("title") or "")
+            content = str(d or "").strip()
+
+            if len(content) > 1200:
+                content = content[:1200].rstrip() + "..."
+
             blocks.append(
                 "SOURCE_URL: {url}\nTITLE: {title}\nCONTENT:\n{content}".format(
-                    url=str((m or {}).get("url") or ""),
-                    title=str((m or {}).get("title") or ""),
-                    content=str(d or ""),
+                    url=url,
+                    title=title,
+                    content=content,
                 )
             )
+
         context = "\n\n---\n\n".join(blocks)
         return (
             "You are a Toyota Cambodia assistant.\n"
             "Rules:\n"
             "1) Answer only using the provided context.\n"
-            "2) If context is insufficient, say: I do not have enough information in the knowledge base to answer that.\n"
+            "2) If the context is insufficient, say: I do not have enough information in the knowledge base to answer that.\n"
             "3) Do not invent facts.\n"
-            "4) Plain text only.\n\n"
+            "4) Plain text only.\n"
+            "5) Keep the answer short (1-3 sentences).\n\n"
             "USER QUESTION:\n"
             f"{question}\n\n"
             "CONTEXT:\n"
@@ -998,13 +1062,25 @@ class VehicleRAGEngine:
                 break
         return out
 
+    def _hybrid_retrieve(self, query: str, target: Dict[str, Any], top_k_final: int) -> Tuple[List[str], List[Dict[str, Any]]]:
+        vec = vector_retrieve(self.collection, query, target, TOP_K_VECTOR)
+
+        cache = self._load_model_cache(target)
+        kw = keyword_retrieve_cached(cache.docs_with_meta, cache.bm25, query, TOP_K_KEYWORD)
+
+        fused = rrf_fuse(vec, kw, top_k_final, k=RRF_K)
+
+        docs = [x["doc"] for x in fused]
+        metas = [x.get("meta") or {} for x in fused]
+        return docs, metas
+
     def rag_answer(self, question: str, last_model_norm: Optional[str] = None) -> Dict[str, Any]:
         target = self.resolve_target(question, last_model_norm)
         if not target:
             msg = "Please specify which model you mean (example: spec of Yaris Cross)."
             return {"answer_type": "rag", "text": msg, "facts": [msg], "sources": [], "evidence": []}
 
-        docs, metas = hybrid_retrieve(self.collection, question, target, self.top_k_final)
+        docs, metas = self._hybrid_retrieve(self.collection, question, target, self.top_k_final)
         if not docs:
             msg = "I do not have enough information in the knowledge base to answer that."
             return {"answer_type": "rag", "text": msg, "facts": [msg], "sources": [], "evidence": []}
